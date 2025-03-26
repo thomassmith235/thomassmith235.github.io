@@ -1,1 +1,0 @@
-# This file serves as documentation for the assets directory, which may contain images or other media files related to the bakery guide.
