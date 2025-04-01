@@ -1,0 +1,32 @@
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+title: "London Bakery Guide"
+description: "Discover the best bakeries in London."
+baseurl: "" # Leave empty for GitHub Pages
+url: "https://<your-username>.github.io" # Replace with your GitHub Pages URL
+
+# Minimal Mistakes settings
+author:
+  name: "Your Name"
+  avatar: "/assets/images/avatar.png" # Optional
+  bio: "A guide to London's finest bakeries."
+  location: "London, UK"
+
+# Social media links (optional)
+social:
+  - name: "GitHub"
+    url: "https://github.com/<your-username>"
+    icon: "fab fa-github"
+  - name: "Twitter"
+    url: "https://twitter.com/<your-username>"
+    icon: "fab fa-twitter"
+
+# Theme settings
+minimal_mistakes_skin: "default" # Choose a skin (e.g., "dark", "solarized", etc.)
+
+google_analytics: "UA-XXXXXXXXX-X"

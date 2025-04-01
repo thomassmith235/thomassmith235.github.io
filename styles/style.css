@@ -1,171 +1,84 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif; /* Clean and modern sans-serif font */
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000; /* Black text */
+    background-color: #fff; /* White background */
+}
+
+/* Body Styling */
+body {
+    font-size: 14px; /* Small text */
     line-height: 1.6;
-    color: #4a4a4a; /* Soft gray for text */
-    background-color: #fdfcf8; /* Warm off-white background */
-    font-size: 14px; /* Reduced base font size */
+    background-color: #fff;
+    color: #000;
 }
 
+/* Header */
 header {
-    background: #d4a373; /* Soft caramel color for a warm, inviting feel */
-    color: #fff;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-header .container {
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    justify-content: space-between; /* Align title and navbar */
+    align-items: center; /* Vertically center the content */
 }
 
 header h1 {
-    font-family: 'Poppins', sans-serif; /* Use Poppins for headings */
-    font-size: 1.8rem; /* Slightly smaller heading */
-    font-weight: 600; /* Semi-bold for emphasis */
-    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px; /* Add some spacing to the left */
+    content: "London Bakery Guide"; /* Ensure consistent title */
+}
+
+header h1 a {
+    text-decoration: none; /* Remove underline from title */
+}
+
+header nav {
+    flex-grow: 0; /* Remove flex-grow to prevent it from taking extra space */
+    margin: 0 auto; /* Center the navbar horizontally */
+    text-align: center; /* Center the navbar content */
 }
 
 header nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 1rem;
+    display: inline-flex; /* Inline-flex to center the items */
+    gap: 15px;
 }
 
 header nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
+    color: #000;
+    font-size: 14px;
+    transition: color 0.3s;
 }
 
-#hero {
-    background: #f4e3d7; /* Soft blush pink for a cozy feel */
-    color: #4a4a4a;
+header nav ul li a:hover {
+    color: #555; /* Slightly lighter black on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
     text-align: center;
-    padding: 3rem 1rem;
 }
 
-#hero h2, #bakeries .bakery h3, #about h2 {
-    font-family: 'Poppins', sans-serif; /* Use Poppins for all major headings */
-    font-size: 2.2rem; /* Reduced heading size */
-    font-weight: 600; /* Semi-bold for a modern look */
-    margin-bottom: 1rem;
+main h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-#hero p, #bakeries .bakery p, #about p {
-    font-family: 'Poppins', sans-serif; /* Use Poppins for body text */
-    font-size: 1rem; /* Reduced paragraph size */
-    color: #6a6a6a; /* Softer gray for secondary text */
-    margin-bottom: 1.5rem;
+main p {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-#hero .btn {
-    display: inline-block;
-    background: #d4a373;
-    color: #fff;
-    padding: 0.7rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif; /* Use Poppins for buttons */
-    font-size: 0.9rem; /* Smaller button text */
-    font-weight: 600;
-    text-transform: uppercase; /* Optional: Make button text uppercase */
-    transition: background 0.3s ease;
-}
-
-#hero .btn:hover {
-    background: #b5835a; /* Darker caramel for hover effect */
-}
-
-#about, #bakeries {
-    padding: 2rem 1rem;
-    background: #fdfcf8;
-}
-
-#bakeries .bakery-list {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-#bakeries .bakery {
-    background: #fff;
-    padding: 1.5rem;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    flex: 1 1 calc(33.333% - 1rem);
-    box-sizing: border-box;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#bakeries .bakery:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
+/* Footer */
 footer {
-    background: #4a4a4a; /* Dark gray for contrast */
-    color: #fff;
+    border-top: 1px solid #000;
+    padding: 10px 0;
     text-align: center;
-    padding: 1rem 0;
-    font-family: 'Poppins', sans-serif; /* Use Poppins for footer text */
-    font-size: 0.8rem; /* Smaller footer text */
-}
-
-/* Map Page Layout */
-#map-page .map-layout {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.bakery-list {
-    flex: 1;
-    background: #fdfcf8;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.bakery-list h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.bakery-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.bakery-list ul li {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.bakery-list ul li:last-child {
-    border-bottom: none;
-}
-
-.map-container {
-    flex: 2;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 12px; /* Smaller footer text */
+    color: #555;
 }
