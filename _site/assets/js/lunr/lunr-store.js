@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "",
-        "excerpt":"Interactive Map   Explore the map below to find these bakeries:     ","categories": [],
+        "excerpt":"Interactive Map  Explore the map below to find these bakeries:     ","categories": [],
         "tags": [],
         "url": "/map/",
         "teaser": null

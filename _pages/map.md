@@ -5,7 +5,6 @@ title: ""
 pagination: false
 ---
 ## Interactive Map
-
 Explore the map below to find these bakeries:
 
 <iframe 
