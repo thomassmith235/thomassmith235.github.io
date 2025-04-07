@@ -9,7 +9,7 @@ plugins:
 title: "London Bakery Guide"
 description: "Discover the best bakeries in London."
 baseurl: "" # Leave empty for GitHub Pages
-url: "https://<thomassmith235>.github.io" # Replace with your GitHub Pages URL
+url: "https://thomassmith235.github.io" # Replace with your GitHub Pages URL
 
 # Minimal Mistakes settings
 author:
