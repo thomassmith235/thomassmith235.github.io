@@ -21,15 +21,15 @@ author:
 
 # Social media links (optional)
 social:
-  - name: "GitHub"
-    url: "https://github.com/<your-username>"
+  - name: "Instagram"
+    url: "https://instagram.com/<your-username>"
     icon: "fab fa-github"
 
 # Theme settings
 minimal_mistakes_skin: "mint" # Change from "default" to "mint"
 logo: /assets/images/logo.png
 
-google_analytics: "UA-XXXXXXXXX-X"
+google_analytics: "G-Q81QFXXHNF"
 
 collections:
   pages:
