@@ -1,1 +1,31 @@
-var store = []
+var store = [{
+        "title": "Page Not Found",
+        "excerpt":"Oops! The page you’re looking for doesn’t exist.  ","categories": [],
+        "tags": [],
+        "url": "/404.html",
+        "teaser": null
+      },{
+        "title": "About Us",
+        "excerpt":"Welcome to the London Bakery Guide At London Bakery Guide, we are passionate about connecting you with the best bakeries in London. From artisan sourdough to gluten-free treats, our mission is to help you discover the finest baked goods the city has to offer. Our team of bakery enthusiasts has...","categories": [],
+        "tags": [],
+        "url": "/about/",
+        "teaser": null
+      },{
+        "title": "Blog",
+        "excerpt":"Our Latest Blog Posts The Best Croissants in London Discover where to find the flakiest, most buttery croissants in the city. Read more Top 5 Artisan Bakeries A guide to the top artisan bakeries in London for bread lovers. Read more Gluten-Free Treats Explore the best gluten-free bakeries and treats...","categories": [],
+        "tags": [],
+        "url": "/blog/",
+        "teaser": null
+      },{
+        "title": "London Bakery Guide",
+        "excerpt":"Discover the Best Bakeries in London From artisan bread to delicious pastries, explore London’s finest bakeries. Explore now About Us We are passionate about connecting you with the best bakeries in London. Whether you’re looking for a cozy café or a quick pastry, we’ve got you covered. Featured Bakeries Bakery...","categories": [],
+        "tags": [],
+        "url": "/",
+        "teaser": null
+      },{
+        "title": "Bakery Map",
+        "excerpt":"Top Bakeries in London   Here are some of the best bakeries in London:      Bakery A - Artisan Sourdough   Bakery B - Buttery Croissants   Bakery C - Gluten-Free Treats   Bakery D - Classic British Cakes   Bakery E - Vegan Delights     Interactive Map   Explore the map below to find these bakeries:     ","categories": [],
+        "tags": [],
+        "url": "/map/",
+        "teaser": null
+      },]
