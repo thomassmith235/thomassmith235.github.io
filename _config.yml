@@ -29,7 +29,7 @@ social:
 minimal_mistakes_skin: "mint" # Change from "default" to "mint"
 logo: /assets/images/logo.png
 
-google_analytics: "G-Q81QFXXHNF"
+google_analytics: G-Q81QFXXHNF
 
 collections:
   pages:
