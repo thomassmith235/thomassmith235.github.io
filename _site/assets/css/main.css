@@ -1,7 +1,17 @@
 @charset "UTF-8";
 /* ==========================================================================
-   Default skin
+   Mint skin
    ========================================================================== */
+/* Colors */
+.page__footer {
+  color: #fff !important;
+}
+
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
 /* Copyright comment */
 /*!
  * Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
@@ -505,9 +515,9 @@ img.mfp-img {
    ========================================================================== */
 button:focus, a:focus {
   /* Default*/
-  outline: thin dotted #6f777d;
+  outline: thin dotted #11999e;
   /* Webkit*/
-  outline: 5px auto #6f777d;
+  outline: 5px auto #11999e;
   outline-offset: -2px;
 }
 
@@ -550,7 +560,7 @@ button:focus, a:focus {
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #f3f6f6;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -617,7 +627,7 @@ audio:not([controls]) {
 }
 
 a {
-  color: rgb(47.2, 124.8, 148.8);
+  color: #11999e;
 }
 
 /* Apply focus state */
@@ -729,7 +739,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #3d4144;
+  color: #40514e;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   line-height: 1.5;
 }
@@ -787,7 +797,7 @@ p {
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid #3d4144;
+  border-bottom: 1px solid #40514e;
 }
 u a,
 ins a {
@@ -817,7 +827,7 @@ abbr[title],
 abbr[data-original-title] {
   text-decoration: none;
   cursor: help;
-  border-bottom: 1px dotted #3d4144;
+  border-bottom: 1px dotted #40514e;
 }
 
 /* blockquotes */
@@ -826,7 +836,7 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid #6f777d;
+  border-left: 0.25em solid #11999e;
 }
 blockquote cite {
   font-style: italic;
@@ -838,10 +848,10 @@ blockquote cite:before {
 
 /* links */
 a:visited {
-  color: rgb(78.37, 144.33, 164.73);
+  color: rgb(52.7, 168.3, 172.55);
 }
 a:hover {
-  color: rgb(35.4, 93.6, 111.6);
+  color: rgb(12.75, 114.75, 118.5);
   outline: 0;
 }
 
@@ -864,7 +874,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid rgb(241.7, 242.5, 243.1);
+  border-top: 1px solid rgb(207.25, 211.5, 210.75);
 }
 
 /* lists */
@@ -928,7 +938,7 @@ figure.third figcaption {
 /* Figure captions */
 figcaption {
   margin-bottom: 0.5em;
-  color: rgb(99.8, 103, 105.4);
+  color: #40514e;
   font-family: Georgia, Times, serif;
   font-size: 0.75em;
 }
@@ -937,7 +947,7 @@ figcaption a {
   transition: all 0.2s ease-in-out;
 }
 figcaption a:hover {
-  color: rgb(35.4, 93.6, 111.6);
+  color: rgb(12.75, 114.75, 118.5);
 }
 
 /* Fix IE9 SVG bug */
@@ -1030,7 +1040,7 @@ form legend {
   margin-bottom: 10px;
   *margin-left: -7px;
   padding: 0;
-  color: #3d4144;
+  color: #40514e;
   border: 0;
   white-space: normal;
 }
@@ -1066,7 +1076,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 0.25em;
-  color: #3d4144;
+  color: #40514e;
   cursor: pointer;
 }
 label small {
@@ -1085,9 +1095,9 @@ select {
   width: 100%;
   padding: 0.25em;
   margin-bottom: 0.5em;
-  color: #3d4144;
-  background-color: #fff;
-  border: rgb(241.7, 242.5, 243.1);
+  color: #40514e;
+  background-color: #f3f6f6;
+  border: rgb(207.25, 211.5, 210.75);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
@@ -1219,10 +1229,10 @@ textarea[readonly] {
      ========================================================================== */
 input:focus,
 textarea:focus {
-  border-color: #6f777d;
+  border-color: #11999e;
   outline: 0;
   outline: thin dotted \9 ;
-  box-shadow: inset 0 1px 3px rgba(61, 65, 68, 0.06), 0 0 5px rgba(111, 119, 125, 0.7);
+  box-shadow: inset 0 1px 3px rgba(64, 81, 78, 0.06), 0 0 5px rgba(17, 153, 158, 0.7);
 }
 
 input[type=file]:focus,
@@ -1237,7 +1247,7 @@ select:focus {
      ========================================================================== */
 .help-block,
 .help-inline {
-  color: rgb(99.8, 103, 105.4);
+  color: #40514e;
 }
 
 .help-block {
@@ -1372,8 +1382,8 @@ table + table {
 }
 
 thead {
-  background-color: rgb(241.7, 242.5, 243.1);
-  border-bottom: 2px solid rgb(181.275, 181.875, 182.325);
+  background-color: rgb(207.25, 211.5, 210.75);
+  border-bottom: 2px solid rgb(155.4375, 158.625, 158.0625);
 }
 
 th {
@@ -1384,7 +1394,7 @@ th {
 
 td {
   padding: 0.5em;
-  border-bottom: 1px solid rgb(181.275, 181.875, 182.325);
+  border-bottom: 1px solid rgb(155.4375, 158.625, 158.0625);
 }
 
 tr,
@@ -1446,21 +1456,21 @@ th {
   margin-left: -0.5em; /* override for hidden text*/
 }
 .btn--primary {
-  background-color: #6f777d;
+  background-color: #11999e;
   color: #fff;
 }
 .btn--primary:visited {
-  background-color: #6f777d;
+  background-color: #11999e;
   color: #fff;
 }
 .btn--primary:hover {
-  background-color: rgb(88.8, 95.2, 100);
+  background-color: rgb(13.6, 122.4, 126.4);
   color: #fff;
 }
 .btn--inverse {
   background-color: #fff;
   color: #3d4144;
-  border: 1px solid rgb(241.7, 242.5, 243.1);
+  border: 1px solid rgb(207.25, 211.5, 210.75);
 }
 .btn--inverse:visited {
   background-color: #fff;
@@ -1605,11 +1615,11 @@ th {
 .notice {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #3d4144;
+  color: #40514e;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(241.7, 242.5, 243.1);
+  background-color: rgb(232.1, 235.3, 235.9);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(188.5, 192.5, 195.5, 0.25);
 }
@@ -1643,7 +1653,7 @@ blockquote.notice {
 }
 
 .notice code {
-  background-color: rgb(248.35, 248.75, 249.05);
+  background-color: rgb(237.55, 240.65, 240.95);
 }
 .notice pre code {
   background-color: inherit;
@@ -1656,13 +1666,13 @@ blockquote.notice {
 .notice--primary {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #3d4144;
+  color: #40514e;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(226.2, 227.8, 229);
+  background-color: rgb(197.8, 227.4, 228.4);
   border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(111, 119, 125, 0.25);
+  box-shadow: 0 1px 1px rgba(17, 153, 158, 0.25);
 }
 .notice--primary h4 {
   margin-top: 0 !important; /* override*/
@@ -1684,17 +1694,17 @@ blockquote.notice {
   padding-top: 0;
 }
 .notice--primary a {
-  color: rgb(99.9, 107.1, 112.5);
+  color: rgb(15.3, 137.7, 142.2);
 }
 .notice--primary a:hover {
-  color: rgb(55.5, 59.5, 62.5);
+  color: rgb(8.5, 76.5, 79);
 }
 blockquote.notice--primary {
-  border-left-color: rgb(99.9, 107.1, 112.5);
+  border-left-color: rgb(15.3, 137.7, 142.2);
 }
 
 .notice--primary code {
-  background-color: rgb(240.6, 241.4, 242);
+  background-color: rgb(220.4, 236.7, 237.2);
 }
 .notice--primary pre code {
   background-color: inherit;
@@ -1707,11 +1717,11 @@ blockquote.notice--primary {
 .notice--info {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #3d4144;
+  color: #40514e;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(215.8, 235.2, 241.2);
+  background-color: rgb(206.2, 228, 234);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(59, 156, 186, 0.25);
 }
@@ -1745,7 +1755,7 @@ blockquote.notice--info {
 }
 
 .notice--info code {
-  background-color: rgb(235.4, 245.1, 248.1);
+  background-color: rgb(224.6, 237, 240);
 }
 .notice--info pre code {
   background-color: inherit;
@@ -1758,11 +1768,11 @@ blockquote.notice--info {
 .notice--warning {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #3d4144;
+  color: #40514e;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(246.8, 229.4, 205);
+  background-color: rgb(237.2, 222.2, 197.8);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(214, 127, 5, 0.25);
 }
@@ -1796,7 +1806,7 @@ blockquote.notice--warning {
 }
 
 .notice--warning code {
-  background-color: rgb(250.9, 242.2, 230);
+  background-color: rgb(240.1, 234.1, 221.9);
 }
 .notice--warning pre code {
   background-color: inherit;
@@ -1809,11 +1819,11 @@ blockquote.notice--warning {
 .notice--success {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #3d4144;
+  color: #40514e;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(216.6, 237.2, 216.6);
+  background-color: rgb(207, 230, 209.4);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(63, 166, 63, 0.25);
 }
@@ -1847,7 +1857,7 @@ blockquote.notice--success {
 }
 
 .notice--success code {
-  background-color: rgb(235.8, 246.1, 235.8);
+  background-color: rgb(225, 238, 227.7);
 }
 .notice--success pre code {
   background-color: inherit;
@@ -1860,11 +1870,11 @@ blockquote.notice--success {
 .notice--danger {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #3d4144;
+  color: #40514e;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(251.6, 223, 222.2);
+  background-color: rgb(242, 215.8, 215);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(238, 95, 91, 0.25);
 }
@@ -1898,7 +1908,7 @@ blockquote.notice--danger {
 }
 
 .notice--danger code {
-  background-color: rgb(253.3, 239, 238.6);
+  background-color: rgb(242.5, 230.9, 230.5);
 }
 .notice--danger pre code {
   background-color: inherit;
@@ -1912,7 +1922,7 @@ blockquote.notice--danger {
    ========================================================================== */
 .masthead {
   position: relative;
-  border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
+  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
   -webkit-animation: intro 0.3s both;
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -2088,19 +2098,19 @@ blockquote.notice--danger {
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
-  color: rgb(99.8, 103, 105.4);
-  border: 1px solid rgb(181.275, 181.875, 182.325);
+  color: #40514e;
+  border: 1px solid rgb(155.4375, 158.625, 158.0625);
   border-radius: 0;
 }
 .pagination li a:hover {
-  color: rgb(35.4, 93.6, 111.6);
+  color: rgb(12.75, 114.75, 118.5);
 }
 .pagination li a.current, .pagination li a.current.disabled {
   color: #fff;
-  background: #6f777d;
+  background: #11999e;
 }
 .pagination li a.disabled {
-  color: rgba(99.8, 103, 105.4, 0.5);
+  color: rgba(64, 81, 78, 0.5);
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -2125,12 +2135,12 @@ blockquote.notice--danger {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: rgb(99.8, 103, 105.4);
-  border: 1px solid rgb(181.275, 181.875, 182.325);
+  color: #40514e;
+  border: 1px solid rgb(155.4375, 158.625, 158.0625);
   border-radius: 4px;
 }
 .pagination--pager:hover {
-  background-color: rgb(99.8, 103, 105.4);
+  background-color: #40514e;
   color: #fff;
 }
 .pagination--pager:first-child {
@@ -2143,7 +2153,7 @@ blockquote.notice--danger {
   border-bottom-left-radius: 0;
 }
 .pagination--pager.disabled {
-  color: rgba(99.8, 103, 105.4, 0.5);
+  color: rgba(64, 81, 78, 0.5);
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -2155,7 +2165,7 @@ blockquote.notice--danger {
 .page__comments + .pagination {
   margin-top: 2em;
   padding-top: 2em;
-  border-top: 1px solid rgb(241.7, 242.5, 243.1);
+  border-top: 1px solid rgb(207.25, 211.5, 210.75);
 }
 
 /*
@@ -2170,18 +2180,18 @@ blockquote.notice--danger {
   -ms-flex-align: center;
   align-items: center;
   min-height: 2em;
-  background: #fff;
+  background: #f3f6f6;
 }
 .greedy-nav a {
   display: block;
   margin: 0 1rem;
-  color: #6f777d;
+  color: #40514e;
   text-decoration: none;
   -webkit-transition: none;
   transition: none;
 }
 .greedy-nav a:hover {
-  color: rgb(83.25, 89.25, 93.75);
+  color: #40514e;
 }
 .greedy-nav a.site-logo {
   margin-left: 0;
@@ -2229,7 +2239,7 @@ blockquote.notice--danger {
   left: 0;
   bottom: 0;
   height: 4px;
-  background: #6f777d;
+  background: #11999e;
   width: 100%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -2247,9 +2257,9 @@ blockquote.notice--danger {
   right: 0;
   margin-top: 15px;
   padding: 5px;
-  border: 1px solid rgb(241.7, 242.5, 243.1);
+  border: 1px solid rgb(207.25, 211.5, 210.75);
   border-radius: 4px;
-  background: #fff;
+  background: #f3f6f6;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
@@ -2262,8 +2272,8 @@ blockquote.notice--danger {
   font-size: 1em;
 }
 .greedy-nav .hidden-links a:hover {
-  color: rgb(83.25, 89.25, 93.75);
-  background: rgb(219, 221, 222.5);
+  color: #40514e;
+  background: rgb(216.8, 220.2, 219.6);
 }
 .greedy-nav .hidden-links:before {
   content: "";
@@ -2273,7 +2283,7 @@ blockquote.notice--danger {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: rgb(241.7, 242.5, 243.1) transparent;
+  border-color: rgb(207.25, 211.5, 210.75) transparent;
   display: block;
   z-index: 0;
 }
@@ -2285,13 +2295,13 @@ blockquote.notice--danger {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: #fff transparent;
+  border-color: #f3f6f6 transparent;
   display: block;
   z-index: 1;
 }
 .greedy-nav .hidden-links li {
   display: block;
-  border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
+  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
 }
 .greedy-nav .hidden-links li:last-child {
   border-bottom: none;
@@ -2451,7 +2461,7 @@ blockquote.notice--danger {
   font-size: 0.75em;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
+  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
 }
 
 /*
@@ -2460,8 +2470,8 @@ blockquote.notice--danger {
 .toc {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   color: #7a8288;
-  background-color: #fff;
-  border: 1px solid rgb(241.7, 242.5, 243.1);
+  background-color: #f3f6f6;
+  border: 1px solid rgb(207.25, 211.5, 210.75);
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
@@ -2469,12 +2479,12 @@ blockquote.notice--danger {
 .toc .nav__title {
   color: #fff;
   font-size: 0.75em;
-  background: #6f777d;
+  background: #11999e;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 .toc .active a {
-  background-color: rgb(226.2, 227.8, 229);
+  background-color: rgb(207.4, 234.6, 235.6);
   color: #3d4144;
 }
 
@@ -2493,13 +2503,13 @@ blockquote.notice--danger {
 .toc__menu a {
   display: block;
   padding: 0.25rem 0.75rem;
-  color: rgb(99.8, 103, 105.4);
+  color: #40514e;
   font-weight: bold;
   line-height: 1.5;
-  border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
+  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
 }
 .toc__menu a:hover {
-  color: #3d4144;
+  color: #40514e;
 }
 .toc__menu li ul > li a {
   padding-left: 1.25rem;
@@ -2528,12 +2538,12 @@ blockquote.notice--danger {
   margin-right: 0;
   width: 100%;
   margin-top: 3em;
-  color: rgb(99.8, 103, 105.4);
+  color: #40514e;
   -webkit-animation: intro 0.3s both;
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: rgb(241.7, 242.5, 243.1);
+  background-color: #30e3ca;
 }
 .page__footer::after {
   clear: both;
@@ -2569,7 +2579,7 @@ blockquote.notice--danger {
 .page__footer .fab,
 .page__footer .far,
 .page__footer .fal {
-  color: rgb(99.8, 103, 105.4);
+  color: #40514e;
 }
 
 .page__footer-copyright {
@@ -2615,14 +2625,14 @@ blockquote.notice--danger {
   height: 2rem;
   border: 0;
   outline: none;
-  color: #6f777d;
+  color: #11999e;
   background-color: transparent;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .search__toggle:hover {
-  color: rgb(83.25, 89.25, 93.75);
+  color: rgb(12.75, 114.75, 118.5);
 }
 
 .search-icon {
@@ -2714,13 +2724,13 @@ blockquote.notice--danger {
 }
 
 .archive__item-title .ais-Highlight {
-  color: #6f777d;
+  color: #11999e;
   font-style: normal;
   text-decoration: underline;
 }
 
 .archive__item-excerpt .ais-Highlight {
-  color: #6f777d;
+  color: #11999e;
   font-style: normal;
   font-weight: bold;
 }
@@ -3233,7 +3243,7 @@ body:hover .visually-hidden button {
 .social-icons .fab,
 .social-icons .far,
 .social-icons .fal {
-  color: #3d4144;
+  color: #40514e;
 }
 .social-icons .fa-behance, .social-icons .fa-behance-square {
   color: #1769ff;
@@ -3315,7 +3325,7 @@ body:hover .visually-hidden button {
   position: relative;
   width: 1.5rem;
   height: 0.25rem;
-  background: #6f777d;
+  background: #11999e;
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -3326,7 +3336,7 @@ body:hover .visually-hidden button {
   left: 0;
   width: 1.5rem;
   height: 0.25rem;
-  background: #6f777d;
+  background: #11999e;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -3368,7 +3378,7 @@ body:hover .visually-hidden button {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: #fff;
+    background-color: #f3f6f6;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     pointer-events: none;
@@ -3384,7 +3394,7 @@ body:hover .visually-hidden button {
 .greedy-nav__toggle:hover .navicon,
 .greedy-nav__toggle:hover .navicon:before,
 .greedy-nav__toggle:hover .navicon:after {
-  background: rgb(83.25, 89.25, 93.75);
+  background: rgb(12.75, 114.75, 118.5);
 }
 .greedy-nav__toggle:hover.close .navicon {
   background: transparent;
@@ -3455,7 +3465,7 @@ body:hover .visually-hidden button {
   min-height: 0;
   z-index: 9999;
   background: #fff;
-  border: 1px solid rgb(241.7, 242.5, 243.1);
+  border: 1px solid rgb(207.25, 211.5, 210.75);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
@@ -3468,7 +3478,7 @@ body:hover .visually-hidden button {
 }
 .modal__actions {
   padding: 0.5em 1em;
-  border-top: 1px solid rgb(241.7, 242.5, 243.1);
+  border-top: 1px solid rgb(207.25, 211.5, 210.75);
 }
 
 /*
@@ -3683,7 +3693,7 @@ body {
   line-height: 1;
 }
 .page__title a {
-  color: #3d4144;
+  color: #40514e;
   text-decoration: none;
 }
 .page__title + .page__meta, .page__title + .comment__date {
@@ -3701,7 +3711,7 @@ body {
 }
 .page__content h2 {
   padding-bottom: 0.5em;
-  border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
+  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
 }
 .page__content h1 .header-link, .page__content h2 .header-link, .page__content h3 .header-link, .page__content h4 .header-link, .page__content h5 .header-link, .page__content h6 .header-link {
   position: relative;
@@ -3861,7 +3871,7 @@ body {
 .page__share {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid rgb(241.7, 242.5, 243.1);
+  border-top: 1px solid rgb(207.25, 211.5, 210.75);
 }
 @media (max-width: 37.5em) {
   .page__share .btn span {
@@ -3887,7 +3897,7 @@ body {
    ========================================================================== */
 .page__meta, .comment__date {
   margin-top: 2em;
-  color: rgb(99.8, 103, 105.4);
+  color: #40514e;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 0.75em;
 }
@@ -3926,12 +3936,12 @@ body {
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid rgb(181.275, 181.875, 182.325);
+  border: 1px solid rgb(155.4375, 158.625, 158.0625);
   border-radius: 4px;
 }
 .page__taxonomy-item:hover {
   text-decoration: none;
-  color: rgb(35.4, 93.6, 111.6);
+  color: rgb(12.75, 114.75, 118.5);
 }
 
 .taxonomy__section {
@@ -3939,7 +3949,7 @@ body {
   padding-bottom: 1em;
 }
 .taxonomy__section:not(:last-child) {
-  border-bottom: solid 1px rgb(241.7, 242.5, 243.1);
+  border-bottom: solid 1px rgb(207.25, 211.5, 210.75);
 }
 .taxonomy__section .archive__item-title {
   margin-top: 0;
@@ -3954,11 +3964,11 @@ body {
 
 .taxonomy__title {
   margin-bottom: 0.5em;
-  color: rgb(99.8, 103, 105.4);
+  color: #40514e;
 }
 
 .taxonomy__count {
-  color: rgb(99.8, 103, 105.4);
+  color: #40514e;
 }
 
 .taxonomy__index {
@@ -3985,13 +3995,13 @@ body {
   justify-content: space-between;
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
+  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
 }
 
 .back-to-top {
   display: block;
   clear: both;
-  color: rgb(99.8, 103, 105.4);
+  color: #40514e;
   font-size: 0.6em;
   text-transform: uppercase;
   text-align: right;
@@ -4014,7 +4024,7 @@ body {
   margin-bottom: 10px;
   padding-top: 2rem;
   font-size: 0.75em;
-  border-top: 1px solid rgb(241.7, 242.5, 243.1);
+  border-top: 1px solid rgb(207.25, 211.5, 210.75);
   text-transform: uppercase;
 }
 
@@ -4043,7 +4053,7 @@ body {
   display: table;
 }
 .comment:not(:last-child) {
-  border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
+  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
 }
 
 .comment__avatar-wrapper {
@@ -4068,7 +4078,7 @@ body {
     width: 80px;
     height: 80px;
     padding: 5px;
-    border: 1px solid rgb(241.7, 242.5, 243.1);
+    border: 1px solid rgb(207.25, 211.5, 210.75);
   }
 }
 
@@ -4104,7 +4114,7 @@ body {
   float: left;
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid rgb(241.7, 242.5, 243.1);
+  border-top: 1px solid rgb(207.25, 211.5, 210.75);
 }
 .page__related::after {
   clear: both;
@@ -4193,8 +4203,8 @@ body {
   margin: 1.414em 0 0.5em;
   padding-bottom: 0.5em;
   font-size: 1em;
-  color: rgb(99.8, 103, 105.4);
-  border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
+  color: #40514e;
+  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
 }
 .archive__subtitle + .list__item .archive__item-title {
   margin-top: 0.5em;
@@ -4377,7 +4387,7 @@ body {
 .feature__wrapper {
   clear: both;
   margin-bottom: 2em;
-  border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
+  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
 }
 .feature__wrapper::after {
   clear: both;
@@ -4707,7 +4717,7 @@ body {
 @media (min-width: 64em) {
   .author__avatar img {
     padding: 5px;
-    border: 1px solid rgb(241.7, 242.5, 243.1);
+    border: 1px solid rgb(207.25, 211.5, 210.75);
   }
 }
 
@@ -4806,9 +4816,9 @@ body {
   margin-top: 15px;
   padding: 10px;
   list-style-type: none;
-  border: 1px solid rgb(241.7, 242.5, 243.1);
+  border: 1px solid rgb(207.25, 211.5, 210.75);
   border-radius: 4px;
-  background: #fff;
+  background: #f3f6f6;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   cursor: default;
 }
@@ -4835,7 +4845,7 @@ body {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: rgb(241.7, 242.5, 243.1) transparent;
+  border-color: rgb(207.25, 211.5, 210.75) transparent;
   z-index: 0;
 }
 @media (min-width: 64em) {
@@ -4852,7 +4862,7 @@ body {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: #fff transparent;
+  border-color: #f3f6f6 transparent;
   z-index: 1;
 }
 @media (min-width: 64em) {

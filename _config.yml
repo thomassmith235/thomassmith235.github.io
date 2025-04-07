@@ -26,11 +26,9 @@ social:
 
 # Theme settings
 minimal_mistakes_skin: "mint" # Change from "default" to "mint"
-logo: /assets/images/favicon.ico
+logo: /assets/images/logo.png
 
 google_analytics: "UA-XXXXXXXXX-X"
-
-favicon: /assets/images/favicon.ico
 
 collections:
   pages:
