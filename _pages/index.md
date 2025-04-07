@@ -2,6 +2,7 @@
 layout: home
 title: "london bakery guide"
 permalink: /
+pagination: false
 ---
 
 ## Discover the Best Bakeries in London

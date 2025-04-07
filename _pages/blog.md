@@ -2,6 +2,7 @@
 layout: posts
 title: "Blog"
 permalink: /blog/
+pagination: false
 ---
 
 ## Our Latest Blog Posts

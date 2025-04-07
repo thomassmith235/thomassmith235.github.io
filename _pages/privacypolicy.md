@@ -1,5 +1,11 @@
-# Privacy Policy
+---
+layout: single
+title: "Privacy Policy"
+permalink: /privacypolicy/
+pagination: false
+---
 
+<div class="two-column-layout">
 ## Introduction
 Welcome to [Your Website Name]!
 
@@ -33,6 +39,7 @@ Google Analytics is a web analytics service offered by Google that tracks and re
 You can opt-out of having made your activity on the Site available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js, and dc.js) from sharing information with Google Analytics about visits activity.
 
 For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: https://policies.google.com/privacy
+</div>
 
 ## GDPR Compliance
 

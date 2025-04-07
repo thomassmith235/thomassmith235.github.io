@@ -28,4 +28,10 @@ var store = [{
         "tags": [],
         "url": "/map/",
         "teaser": null
+      },{
+        "title": "Privacy Policy",
+        "excerpt":"## Introduction Welcome to [Your Website Name]! [Your Website Name] (\"us\", \"we\", or \"our\") operates [your website URL] (the \"Site\"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information we receive from users of the Site. ## Information Collection and Use We collect...","categories": [],
+        "tags": [],
+        "url": "/privacypolicy/",
+        "teaser": null
       },]

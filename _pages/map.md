@@ -2,6 +2,7 @@
 layout: single
 title: "Bakery Map"
 permalink: /map/
+pagination: false
 ---
 
 ## Top Bakeries in London
