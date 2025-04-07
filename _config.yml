@@ -1,4 +1,5 @@
-remote_theme: "mmistakes/minimal-mistakes"
+theme: minimal-mistakes-jekyll
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -8,7 +9,7 @@ plugins:
 title: "London Bakery Guide"
 description: "Discover the best bakeries in London."
 baseurl: "" # Leave empty for GitHub Pages
-url: "https://<your-username>.github.io" # Replace with your GitHub Pages URL
+url: "https://<thomassmith235>.github.io" # Replace with your GitHub Pages URL
 
 # Minimal Mistakes settings
 author:
@@ -22,11 +23,14 @@ social:
   - name: "GitHub"
     url: "https://github.com/<your-username>"
     icon: "fab fa-github"
-  - name: "Twitter"
-    url: "https://twitter.com/<your-username>"
-    icon: "fab fa-twitter"
 
 # Theme settings
 minimal_mistakes_skin: "default" # Choose a skin (e.g., "dark", "solarized", etc.)
 
 google_analytics: "UA-XXXXXXXXX-X"
+
+favicon: /assets/images/favicon.ico
+
+collections:
+  pages:
+    output: true

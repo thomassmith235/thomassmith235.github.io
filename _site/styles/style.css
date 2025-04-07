@@ -1,0 +1,84 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000; /* Black text */
+    background-color: #fff; /* White background */
+}
+
+/* Body Styling */
+body {
+    font-size: 14px; /* Small text */
+    line-height: 1.6;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Align title and navbar */
+    align-items: center; /* Vertically center the content */
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px; /* Add some spacing to the left */
+    content: "London Bakery Guide"; /* Ensure consistent title */
+}
+
+header h1 a {
+    text-decoration: none; /* Remove underline from title */
+}
+
+header nav {
+    flex-grow: 0; /* Remove flex-grow to prevent it from taking extra space */
+    margin: 0 auto; /* Center the navbar horizontally */
+    text-align: center; /* Center the navbar content */
+}
+
+header nav ul {
+    list-style: none;
+    display: inline-flex; /* Inline-flex to center the items */
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #555; /* Slightly lighter black on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #000;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px; /* Smaller footer text */
+    color: #555;
+}
