@@ -1,22 +1,9 @@
 ---
 layout: single
-title: "Bakery Map"
 permalink: /map/
+title: ""
 pagination: false
 ---
-
-## Top Bakeries in London
-
-Here are some of the best bakeries in London:
-
-- **Bakery A** - Artisan Sourdough  
-- **Bakery B** - Buttery Croissants  
-- **Bakery C** - Gluten-Free Treats  
-- **Bakery D** - Classic British Cakes  
-- **Bakery E** - Vegan Delights  
-
----
-
 ## Interactive Map
 
 Explore the map below to find these bakeries:

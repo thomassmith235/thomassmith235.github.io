@@ -1,6 +1,6 @@
 ---
-layout: home
-title: "london bakery guide"
+layout: splash
+title: ""
 permalink: /
 pagination: false
 ---

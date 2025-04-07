@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Blog"
+title: ""
 permalink: /blog/
 pagination: false
 ---
