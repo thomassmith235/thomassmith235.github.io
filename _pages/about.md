@@ -3,6 +3,7 @@ layout: single
 title: "About Us"
 permalink: /about/
 pagination: false
+{% include google_analytics.html %}
 ---
 
 ## Welcome to the London Bakery Guide
