@@ -1,8 +1,8 @@
 var store = [{
         "title": "Page Not Found",
-        "excerpt":"Oops! The page you’re looking for doesn’t exist.  ","categories": [],
+        "excerpt":"Whoops! There aren’t any croissants here!  ","categories": [],
         "tags": [],
-        "url": "/404.html",
+        "url": "/404/",
         "teaser": null
       },{
         "title": "About Us",
