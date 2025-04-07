@@ -17,7 +17,7 @@ var store = [{
         "url": "/blog/",
         "teaser": null
       },{
-        "title": "London Bakery Guide",
+        "title": "london bakery guide",
         "excerpt":"Discover the Best Bakeries in London From artisan bread to delicious pastries, explore London’s finest bakeries. Explore now About Us We are passionate about connecting you with the best bakeries in London. Whether you’re looking for a cozy café or a quick pastry, we’ve got you covered. Featured Bakeries Bakery...","categories": [],
         "tags": [],
         "url": "/",

@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "London Bakery Guide"
+title: "london bakery guide"
 permalink: /
 ---
 
