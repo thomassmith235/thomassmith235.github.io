@@ -29,8 +29,12 @@ social:
 minimal_mistakes_skin: "mint" # Change from "default" to "mint"
 logo: /assets/images/logo.png
 
-# Google Analytics settings (optional)
-google_analytics: G-Q81QFXXHNF
+# Analytics settings
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-Q81QFXXHNF"
+    anonymize_ip: true
 
 collections:
   pages:
