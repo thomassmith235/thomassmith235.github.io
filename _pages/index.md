@@ -2,6 +2,7 @@
 layout: splash
 title: ""
 permalink: /
+
 excerpt: ""
 header: 
   overlay_image: /assets/images/header.jpg

@@ -4,7 +4,7 @@ title: "Bakery List"
 permalink: /bakeries/
 ---
 
-## Bakery List
+## Bakery List (A-Z)
 ## North London
 
 <div class="bakery list" style="display: flex; gap: 20px; font-size: 0.9em;">
@@ -40,4 +40,4 @@ permalink: /bakeries/
     <h3 style="font-size: 1.1em;">Bakery C</h3>
     <p style="font-size: 0.9em;">Specializes in gluten-free treats.</p>
   </div>
----
+</div>

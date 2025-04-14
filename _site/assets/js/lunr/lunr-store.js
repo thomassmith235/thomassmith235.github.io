@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Bakery List",
-        "excerpt":"Bakery List  North London                Bread By Bike      breadbybike.com             Jolene Hornsey Road      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.       East London                Fabrique       breadbybike.com             Bakery B      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.     ---  ","categories": [],
+        "excerpt":"Bakery List (A-Z)  North London                Bread By Bike      breadbybike.com             Jolene Hornsey Road      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.       East London                Fabrique       breadbybike.com             Bakery B      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.      ","categories": [],
         "tags": [],
         "url": "/bakeries/",
         "teaser": null
