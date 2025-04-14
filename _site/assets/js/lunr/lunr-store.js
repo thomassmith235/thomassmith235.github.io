@@ -18,7 +18,7 @@ var store = [{
         "teaser": null
       },{
         "title": "",
-        "excerpt":"Discover the Best Bakeries in London From artisan bread to delicious pastries, explore London’s finest bakeries. Explore now About Us We are passionate about connecting you with the best bakeries in London. Whether you’re looking for a cozy café or a quick pastry, we’ve got you covered. Featured Bakeries Bakery...","categories": [],
+        "excerpt":"Discover the Best Bakeries in London From the best sourdough bread to delicious pastries, explore an independently curated list of London’s finest bakeries. Explore Our Bakery Map! Our Aim We are passionate about connecting you with the best bakeries in London. Whether you’re looking for a cozy café or a...","categories": [],
         "tags": [],
         "url": "/",
         "teaser": null

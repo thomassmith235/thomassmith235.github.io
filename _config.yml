@@ -13,7 +13,6 @@ baseurl: "" # Leave this empty for custom domains
 url: "https://www.londonbakeries.co.uk" # Your custom domain
 
 
-
 # Minimal Mistakes settings
 author:
   name: "london bakery guide"
