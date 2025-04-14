@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 title: "About Us"
 permalink: /about/
 ---
@@ -14,4 +14,4 @@ Our team of bakery enthusiasts has scoured London to bring you a curated selecti
 To celebrate the art of baking and support local bakeries by sharing their stories and creations with the world.
 
 ### Contact Us
-Have questions or suggestions? Feel free to get in touch at londonbakeryguide1@gmail.com We'd love to hear from you!
+Have questions or suggestions? Feel free to get in touch at [londonbakeryguide1@gmail.com](mailto:londonbakeryguide1@gmail.com). We'd love to hear from you!
