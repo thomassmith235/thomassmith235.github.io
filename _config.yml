@@ -8,9 +8,11 @@ plugins:
   - jekyll-include-cache
 
 title: "london bakery guide"
-description: "Discover the best bakeries in London."
+description: ""
 baseurl: "" # Leave this empty for custom domains
 url: "https://www.londonbakeries.co.uk" # Your custom domain
+
+
 
 # Minimal Mistakes settings
 author:

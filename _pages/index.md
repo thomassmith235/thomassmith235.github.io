@@ -2,8 +2,10 @@
 layout: splash
 title: ""
 permalink: /
-header:
+excerpt: ""
+header: 
   overlay_image: /assets/images/header.jpg
+  overlay_filter: 0.2
 ---
 
 ## Discover the Best Bakeries in London
