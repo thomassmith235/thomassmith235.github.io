@@ -2,7 +2,6 @@
 layout: single
 title: "About Us"
 permalink: /about/
-pagination: false
 ---
 
 ## Welcome to the London Bakery Guide
@@ -15,4 +14,4 @@ Our team of bakery enthusiasts has scoured London to bring you a curated selecti
 To celebrate the art of baking and support local bakeries by sharing their stories and creations with the world.
 
 ### Contact Us
-Have questions or suggestions? Feel free to [get in touch](/#contact). We'd love to hear from you!
+Have questions or suggestions? Feel free to get in touch at londonbakeryguide1@gmail.com We'd love to hear from you!

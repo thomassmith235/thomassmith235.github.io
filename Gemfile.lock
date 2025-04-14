@@ -263,6 +263,7 @@ GEM
       concurrent-ruby (~> 1.0)
     uri (1.0.3)
     wdm (0.2.0)
+    webrick (1.9.1)
 
 PLATFORMS
   x64-mingw-ucrt
@@ -274,6 +275,7 @@ DEPENDENCIES
   jekyll-remote-theme
   jekyll-seo-tag
   wdm (>= 0.1.0)
+  webrick
 
 BUNDLED WITH
    2.6.7
