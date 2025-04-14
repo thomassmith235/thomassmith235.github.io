@@ -3,6 +3,8 @@ main:
     url: /
   - title: "about"
     url: /about/
+  - title: "bakery list"
+    url: /bakeries/
   - title: "map"
     url: /map/
   - title: "blog"

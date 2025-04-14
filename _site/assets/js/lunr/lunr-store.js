@@ -11,6 +11,12 @@ var store = [{
         "url": "/about/",
         "teaser": null
       },{
+        "title": "Bakery List",
+        "excerpt":"Bakeries A-Z            Bakery Name    Short description of the bakery.       ","categories": [],
+        "tags": [],
+        "url": "/bakeries/",
+        "teaser": null
+      },{
         "title": "",
         "excerpt":"Our Latest Blog Posts The Best Croissants in London Discover where to find the flakiest, most buttery croissants in the city. Read more Top 5 Artisan Bakeries A guide to the top artisan bakeries in London for bread lovers. Read more Gluten-Free Treats Explore the best gluten-free bakeries and treats...","categories": [],
         "tags": [],
