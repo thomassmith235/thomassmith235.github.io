@@ -28,9 +28,9 @@ permalink: /bakeries/
 
 <div class="bakery list" style="display: flex; gap: 20px; font-size: 0.9em;">
   <div class="bakery-tile" style="flex: 1; border: 1px solid #ddd; padding: 5px;">
-    <img src="/assets/images/breadbybike.jpg" alt="Bakery Image" style="width: 100%; height: auto; margin-bottom: 5px;">
-    <h3 style="font-size: 1.1em;">Fabrique </h3>
-    <h3 style="font-size: 1.1em;"><a href="https://breadbybike.com" target="_blank">breadbybike.com</a></h3>
+    <img src="/assets/images/fabriquebakery.jpg" alt="Bakery Image" style="width: 100%; height: auto; margin-bottom: 5px;">
+    <h3 style="font-size: 1.1em;">Fabrique Bakery </h3>
+    <h3 style="font-size: 1.1em;"><a href="https://fabriquebakery.com" target="_blank">fabriquebakery.com</a></h3>
   </div>
    <div class="bakery-tile" style="flex: 1; border: 1px solid #ddd; padding: 10px;">
     <h3 style="font-size: 1.1em;">Bakery B</h3>
