@@ -32,12 +32,16 @@ permalink: /bakeries/
     <h3 style="font-size: 1.1em;">Fabrique Bakery </h3>
     <h3 style="font-size: 1.1em;"><a href="https://fabriquebakery.com" target="_blank">fabriquebakery.com</a></h3>
   </div>
-   <div class="bakery-tile" style="flex: 1; border: 1px solid #ddd; padding: 10px;">
-    <h3 style="font-size: 1.1em;">Bakery B</h3>
-    <p style="font-size: 0.9em;">Famous for its buttery croissants.</p>
+  
+   <div class="bakery-tile" style="flex: 1; border: 1px solid #ddd; padding: 5px;">
+    <img src="/assets/images/e5bakehouse.jpg" alt="Bakery Image" style="width: 100%; height: auto; margin-bottom: 5px;">
+    <h3 style="font-size: 1.1em;">e5 Bakehouse </h3>
+    <h3 style="font-size: 1.1em;"><a href="https://e5bakehouse.com" target="_blank">e5bakehouse.com</a></h3>
   </div>
-  <div class="bakery-tile" style="flex: 1; border: 1px solid #ddd; padding: 10px;">
-    <h3 style="font-size: 1.1em;">Bakery C</h3>
-    <p style="font-size: 0.9em;">Specializes in gluten-free treats.</p>
+  
+  <div class="bakery-tile" style="flex: 1; border: 1px solid #ddd; padding: 5px;">
+    <img src="/assets/images/pophamseast.jpg" alt="Bakery Image" style="width: 100%; height: auto; margin-bottom: 5px;">
+    <h3 style="font-size: 1.1em;">Pophams Bakery </h3>
+    <h3 style="font-size: 1.1em;"><a href="https://pophamsbakery.com" target="_blank">pophamsbakery.com</a></h3>
   </div>
 </div>
