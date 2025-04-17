@@ -8,7 +8,7 @@ pagination: false
 ## Our Latest Blog Posts
 
 ### London's Top Bakeries: An Introduction
-![Croissants](../assets/croissants.jpg)
+![Croissants](../assets/header.jpg)
 Welcome to our new website dedicated to celebrating the finest independent bakeries in London! 🍞🥐 Whether you're a local or a visitor, there's nothing quite like discovering a hidden gem that serves up delicious, freshly baked goods. In this blog, we'll introduce you to some of the top bakeries in London along with showcasing any special delights they have in the oven, each with its unique charm and specialties.
 
 London is a city brimming with culinary delights, and its bakeries are no exception. From the bustling markets to the quaint neighbourhood shops, you'll find an array of bakeries that offer everything from artisanal bread to decadent pastries. These bakeries are not just places to buy bread; they are community hubs where locals gather, share stories, and enjoy the simple pleasure of a freshly baked treat.
