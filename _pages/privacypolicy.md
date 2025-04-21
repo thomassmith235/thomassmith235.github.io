@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Privacy Policy"
+title: "privacy policy"
 permalink: /privacypolicy/
 pagination: false
 ---

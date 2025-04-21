@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "",
-        "excerpt":"  From the best sourdough bread to delicious pastries, explore an independently curated list of London’s finest bakeries.   Explore Our Bakery Map!     Featured Bakeries           Bakery A      Known for its artisan sourdough bread.            Bakery B      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.        ","categories": [],
+        "excerpt":"  From the best sourdough bread to delicious pastries, explore an independently curated list of London’s finest bakeries.                         about                               bakery list                               bakery map                               bakery blog           ","categories": [],
         "tags": [],
         "url": "/",
         "teaser": null
@@ -35,7 +35,7 @@ var store = [{
         "url": "/map/",
         "teaser": null
       },{
-        "title": "Privacy Policy",
+        "title": "privacy policy",
         "excerpt":"## Introduction Welcome to [Your Website Name]! [Your Website Name] (\"us\", \"we\", or \"our\") operates [your website URL] (the \"Site\"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information we receive from users of the Site. ## Information Collection and Use We collect...","categories": [],
         "tags": [],
         "url": "/privacypolicy/",
