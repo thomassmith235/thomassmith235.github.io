@@ -2,24 +2,13 @@
 layout: splash
 title: ""
 permalink: /
-
-excerpt: ""
-header: 
-  overlay_image: /assets/images/header.jpg
-  overlay_filter: 0.2
 ---
 
-## Discover the Best Bakeries in London
+<!-- Blank line added below -->
 
 From the best sourdough bread to delicious pastries, explore an independently curated list of London's finest bakeries.
 
 [Explore Our Bakery Map!](/map)
-
----
-
-## Our Aim
-
-We are passionate about connecting you with the best bakeries in London. Whether you're looking for a cozy café or a quick pastry, we've got you covered. We maintain a list of bakeries and cafés that aren't part of large chains, promoting the authentic charm of London's independent spots. No ratings, no paid reviews—just genuine recommendations to help you discover and savor all that London has to offer.
 
 ---
 

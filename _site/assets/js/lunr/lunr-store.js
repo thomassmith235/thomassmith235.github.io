@@ -12,19 +12,19 @@ var store = [{
         "teaser": null
       },{
         "title": "Bakery List",
-        "excerpt":"Bakery List (A-Z)  North London                Bread By Bike      breadbybike.com             Jolene Hornsey Road      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.       East London                Fabrique       breadbybike.com             Bakery B      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.      ","categories": [],
+        "excerpt":"  North London                Bread By Bike      breadbybike.com             Jolene Hornsey Road      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.       East London                Fabrique Bakery       fabriquebakery.com                     e5 Bakehouse       e5bakehouse.com                    Pophams Bakery       pophamsbakery.com      ","categories": [],
         "tags": [],
         "url": "/bakeries/",
         "teaser": null
       },{
         "title": "",
-        "excerpt":"Our Latest Blog Posts The Best Croissants in London Discover where to find the flakiest, most buttery croissants in the city. Read more Top 5 Artisan Bakeries A guide to the top artisan bakeries in London for bread lovers. Read more Gluten-Free Treats Explore the best gluten-free bakeries and treats...","categories": [],
+        "excerpt":"Our Latest Blog Posts London’s Top Bakeries: An Introduction Welcome to our new website dedicated to celebrating the finest independent bakeries in London! 🍞🥐 Whether you’re a local or a visitor, there’s nothing quite like discovering a hidden gem that serves up delicious, freshly baked goods. In this blog, we’ll...","categories": [],
         "tags": [],
         "url": "/blog/",
         "teaser": null
       },{
         "title": "",
-        "excerpt":"Discover the Best Bakeries in London From the best sourdough bread to delicious pastries, explore an independently curated list of London’s finest bakeries. Explore Our Bakery Map! Our Aim We are passionate about connecting you with the best bakeries in London. Whether you’re looking for a cozy café or a...","categories": [],
+        "excerpt":"  From the best sourdough bread to delicious pastries, explore an independently curated list of London’s finest bakeries.   Explore Our Bakery Map!     Featured Bakeries           Bakery A      Known for its artisan sourdough bread.            Bakery B      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.        ","categories": [],
         "tags": [],
         "url": "/",
         "teaser": null
