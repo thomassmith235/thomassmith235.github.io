@@ -1,9 +1,9 @@
 ---
 layout: splash
-title: ""
 permalink: /
+description: "Discover the best independent bakeries in London, offering sourdough bread, pastries, and more. Explore our curated list and map."
+keywords: "bakeries, London, sourdough, pastries, artisan bread, bakery map, bakery list"
 ---
-
 
 <div class="homepage-tiles" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 20px; width: 95%; margin-left: auto; margin-right: auto; justify-items: center;">
   <div class="tile" style="text-align: left; padding: 20px;">

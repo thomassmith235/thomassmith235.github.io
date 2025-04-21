@@ -29,7 +29,7 @@ var store = [{
         "url": "/contact/",
         "teaser": null
       },{
-        "title": "",
+        "title": "Index",
         "excerpt":"                      about                               bakery list                               bakery map                               bakery blog           ","categories": [],
         "tags": [],
         "url": "/",
