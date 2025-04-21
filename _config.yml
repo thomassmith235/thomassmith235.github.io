@@ -23,11 +23,11 @@ author:
 # Social media links (optional)
 social:
   - name: "Instagram"
-    url: "https://instagram.com/<your-username>"
-    icon: "fab fa-github"
+    url: "https://instagram.com/<londonbakeryg>"
+    icon: "instagramlogo.png"
 
 # Theme settings
-minimal_mistakes_skin: "mint" # Change from "default" to "mint"
+minimal_mistakes_skin: "default" # Change from "default" to "mint"
 logo: /assets/images/logo.png
 
 # Analytics settings

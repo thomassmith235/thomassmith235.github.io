@@ -18,13 +18,19 @@ var store = [{
         "teaser": null
       },{
         "title": "",
-        "excerpt":"Our Latest Blog Posts London’s Top Bakeries: An Introduction Welcome to our new website dedicated to celebrating the finest independent bakeries in London! 🍞🥐 Whether you’re a local or a visitor, there’s nothing quite like discovering a hidden gem that serves up delicious, freshly baked goods. In this blog, we’ll...","categories": [],
+        "excerpt":"Our Latest Blog Posts    ","categories": [],
         "tags": [],
         "url": "/blog/",
         "teaser": null
       },{
+        "title": "Contact Us",
+        "excerpt":"londonbakeryguide1@gmail.com  ","categories": [],
+        "tags": [],
+        "url": "/contact/",
+        "teaser": null
+      },{
         "title": "",
-        "excerpt":"  From the best sourdough bread to delicious pastries, explore an independently curated list of London’s finest bakeries.                         about                               bakery list                               bakery map                               bakery blog           ","categories": [],
+        "excerpt":"                      about                               bakery list                               bakery map                               bakery blog           ","categories": [],
         "tags": [],
         "url": "/",
         "teaser": null
@@ -40,4 +46,10 @@ var store = [{
         "tags": [],
         "url": "/privacypolicy/",
         "teaser": null
-      },]
+      },{
+        "title": "London Bakery Guide Introduction",
+        "excerpt":"Welcome to our new website dedicated to celebrating the finest independent bakeries in London! 🍞🥐 Whether you’re a local or a visitor, there’s nothing quite like discovering a hidden gem that serves up delicious, freshly baked goods. In this blog, we’ll introduce you to some of the top bakeries in...","categories": ["Blog"],
+        "tags": ["bakeries","London","guide"],
+        "url": "/blog/2025/04/21/London-Bakery-Guide-Intro.html",
+        "teaser": null
+      }]
