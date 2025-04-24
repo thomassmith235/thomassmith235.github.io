@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Bakery List",
-        "excerpt":"  North London                Bread By Bike      breadbybike.com             Jolene Hornsey Road      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.       East London                Fabrique Bakery       fabriquebakery.com                     e5 Bakehouse       e5bakehouse.com                    Pophams Bakery       pophamsbakery.com      ","categories": [],
+        "excerpt":"  North London                Bread By Bike      breadbybike.com             Jolene Hornsey Road      Famous for its buttery croissants.            Bakery C      Specializes in gluten-free treats.       East London                Fabrique Bakery       fabriquebakery.com                     e5 Bakehouse       e5bakehouse.com                    Pophams Bakery       pophamsbakery.com       South London                Eric's      ericslondon.com                  IRENE      irenebakery.co.uk/             Flour &amp; Bean      Family-run spot in Clapham with fantastic sourdough.      ","categories": [],
         "tags": [],
         "url": "/bakeries/",
         "teaser": null
