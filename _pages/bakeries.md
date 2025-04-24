@@ -73,3 +73,25 @@ permalink: /bakeries/
     <h3 style="font-size: 1.1em;"><a href="https://pophamsbakery.com" target="_blank">pophamsbakery.com</a></h3>
   </div>
 </div>
+
+## South London
+
+<div class="bakery list" style="font-size: 0.9em;">
+  <div class="bakery-tile">
+    <img src="/assets/images/erics.jpg" alt="Bakery Image">
+    <h3 style="font-size: 1.1em;">Eric's</h3>
+    <h3 style="font-size: 1.1em;"><a href="https://www.ericslondon.com" target="_blank">ericslondon.com</a></h3>
+  </div>
+
+  <div class="bakery-tile">
+    <img src="/assets/images/irene.jpg" alt="Bakery Image">
+    <h3 style="font-size: 1.1em;">IRENE</h3>
+    <h3 style="font-size: 1.1em;"><a href="https://www.irenebakery.co.uk/"
+    target="_blank">irenebakery.co.uk/</a></h3>
+  </div>
+
+  <div class="bakery-tile">
+    <h3 style="font-size: 1.1em;">Flour & Bean</h3>
+    <p style="font-size: 0.9em;">Family-run spot in Clapham with fantastic sourdough.</p>
+  </div>
+</div>
