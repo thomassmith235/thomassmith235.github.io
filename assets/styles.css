@@ -244,6 +244,28 @@ footer {
   margin: -8px 0 12px;
 }
 
+.screenshot-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  border: 1px dashed var(--border);
+  background: linear-gradient(135deg, rgba(79, 155, 255, 0.08), rgba(47, 211, 168, 0.06));
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.screenshot-frame::after {
+  content: 'Add screenshot';
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
 @media (max-width: 640px) {
   .hero { padding: 24px; }
   .cta-row { flex-direction: column; }
