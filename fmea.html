@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FMEA Tool | Wind Software Suite</title>
+  <meta name="description" content="Dedicated page for the wind FMEA/FMECA tool. Review features, workflow, and jump straight to the login page." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="index.html">&larr; Back to tools</a>
+    <header class="hero">
+      <div class="pill">FMEA / FMECA for wind assets</div>
+      <h1>Prioritize wind reliability with a structured FMEA workflow.</h1>
+      <p class="lede">Map turbines, score risk, and share clean reports. The FMEA tool keeps onshore and offshore assets organized with severity-occurrence-detection scoring and export-ready outputs.</p>
+      <div class="cta-row">
+        <a class="cta primary open-app" data-path="/login" href="http://localhost:3000/login" target="_blank" rel="noopener">Open FMEA login</a>
+        <a class="cta ghost" href="fmeca-web-app/README.md" target="_blank" rel="noopener">Setup & deployment guide</a>
+      </div>
+      <p class="hint">Login link defaults to localhost:3000/login. Update to your deployed URL when ready.</p>
+      <div class="meta-grid">
+        <div class="meta-card">
+          <div class="meta-label">Use cases</div>
+          <div class="meta-value">Reliability, commissioning, compliance</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-label">Exports</div>
+          <div class="meta-value">CSV + print-ready PDF</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-label">Focus</div>
+          <div class="meta-value">Onshore + offshore turbines</div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-title">Highlights</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Asset hierarchy that matches your turbines</h3>
+          <p>Model towers, blades, drivetrains, and electrical subsystems with variant-specific fields for offshore foundations and inter-array cabling.</p>
+        </div>
+        <div class="card">
+          <h3>Fast risk scoring</h3>
+          <p>Severity, occurrence, and detection fields recalc RPN instantly, with filters to keep the highest risk items at the top.</p>
+        </div>
+        <div class="card">
+          <h3>Collaboration ready</h3>
+          <p>Save projects to the backend, reopen, and export for OEM submissions, regulators, or service partners without rework.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Workflow</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3>Authenticate</h3>
+          <p>Request a token from <code>/api/auth/login</code>, then sign in via the UI. Swap in your deployed URL to point at production.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3>Build the FMEA</h3>
+          <p>Add subsystems and components, capture failure modes, effects, and mitigations, and score S/O/D with instant RPN updates.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3>Share the outputs</h3>
+          <p>Export CSV/PDF for audits and service crews, or reopen projects later to keep the risk register current.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <div class="section-title" style="margin: 0 0 10px;">Jump into the tool</div>
+        <p class="lede" style="margin: 0 0 14px;">Open the login page, set your deployed URL, and start building your wind-specific FMEA.</p>
+        <div class="cta-row">
+          <a class="cta primary open-app" data-path="/login" href="http://localhost:3000/login" target="_blank" rel="noopener">Launch FMEA login</a>
+          <a class="cta ghost" href="index.html">Return to tool list</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built for reliability teams keeping wind assets running. MIT licensed.
+    </footer>
+  </div>
+</body>
+</html>

@@ -171,6 +171,13 @@ section {
 .card h3 { margin: 0 0 8px; font-size: 18px; }
 .card p { margin: 0; color: var(--muted); }
 
+.card-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -220,6 +227,21 @@ footer {
   color: var(--muted);
   font-size: 14px;
   text-align: center;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.subheading {
+  color: var(--muted);
+  margin: -8px 0 12px;
 }
 
 @media (max-width: 640px) {

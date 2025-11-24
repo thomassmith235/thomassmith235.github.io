@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FMECA Tool | Wind Turbine Maintenance</title>
-  <meta name="description" content="Build and manage FMECA projects for wind turbine maintenance. Capture subsystems, components, failure modes, and RPN scoring with export-ready outputs." />
+  <title>Wind Software Suite | Onshore & Offshore Tools</title>
+  <meta name="description" content="Wind software suite for onshore and offshore teams. Explore tools like the FMEA builder, digital work packages, and production insights with fast access to their dedicated pages." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -14,72 +14,75 @@
 <body>
   <div class="page">
     <header class="hero">
-      <div class="pill">FMECA tool for wind assets</div>
-      <h1>Plan wind turbine maintenance with a structured FMECA workflow.</h1>
-      <p class="lede">Capture subsystems, components, and failure modes, score them with severity-occurrence-detection, and export clean reports. Backed by a Django API and a focused React UI built for turbine operations.</p>
+      <div class="pill">Wind software suite</div>
+      <h1>Software for onshore and offshore wind operations.</h1>
+      <p class="lede">Purpose-built tools that help wind teams model assets, prioritize risk, and keep turbines spinning — from structured FMEA/FMECA to production insights and digital work packages.</p>
       <div class="cta-row">
-        <!-- mark these so the script can update them at runtime -->
-        <a class="cta primary open-app" href="http://localhost:3000" target="_blank" rel="noopener">Open the app</a>
-        <a class="cta ghost" href="fmeca-web-app/README.md" target="_blank" rel="noopener">View setup guide</a>
+        <a class="cta primary" href="fmea.html">Explore the FMEA tool</a>
+        <a class="cta ghost" href="#tools">View all tools</a>
       </div>
-      <p class="hint">Button points at the default frontend (localhost:3000). Swap in your deployed URL when you publish.</p>
+      <p class="hint">Each tool links to a dedicated page with features and a login shortcut.</p>
       <div class="meta-grid">
         <div class="meta-card">
-          <div class="meta-label">Scope</div>
-          <div class="meta-value">Failure Modes, Effects and Criticality Analysis for wind assets</div>
+          <div class="meta-label">Onshore + Offshore</div>
+          <div class="meta-value">Built for towers, nacelles, blades, and substructures</div>
         </div>
         <div class="meta-card">
-          <div class="meta-label">Stack</div>
-          <div class="meta-value">React + Vite UI with Django REST backend</div>
+          <div class="meta-label">Tooling focus</div>
+          <div class="meta-value">Reliability, operations, production, and compliance</div>
         </div>
         <div class="meta-card">
-          <div class="meta-label">Exports</div>
-          <div class="meta-value">Excel-ready CSV and print-friendly PDF</div>
+          <div class="meta-label">Access</div>
+          <div class="meta-value">Dedicated pages with feature rundowns and login links</div>
         </div>
       </div>
     </header>
 
-    <section>
-      <div class="section-title">What you can do</div>
+    <section id="tools">
+      <div class="section-title">Tools for wind teams</div>
       <div class="grid">
         <div class="card">
-          <h3>Model the hierarchy</h3>
-          <p>Capture subsystems and components, then add failure modes with effects and mitigation notes. Everything stays organized by the assets you maintain.</p>
+          <h3>FMEA / FMECA</h3>
+          <p>Structure assets, log failure modes, score S/O/D, and export risk registers. Built for turbine reliability workflows.</p>
+          <div class="card-actions">
+            <a class="cta ghost" href="fmea.html">Open the FMEA page</a>
+          </div>
         </div>
         <div class="card">
-          <h3>Score risk fast</h3>
-          <p>Use 1-10 scoring for severity, occurrence, and detection. RPN is calculated instantly so you can focus on the riskiest work.</p>
+          <h3>Digital work packages</h3>
+          <p>Standardize tasks for crews and contractors, capture QC evidence, and sync updates to your maintenance backlog.</p>
         </div>
         <div class="card">
-          <h3>Save, reload, export</h3>
-          <p>Persist projects to the Django API, reopen them with a click, and export to CSV or PDF for audits and handoffs.</p>
+          <h3>Production + downtime</h3>
+          <p>Blend SCADA, metocean, and work order data to surface underperformance and downtime root causes across fleets.</p>
+        </div>
+        <div class="card">
+          <h3>Offshore readiness</h3>
+          <p>Track vessels, weather windows, and substructure checks to keep offshore work predictable and safe.</p>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="section-title">How it works</div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">01</div>
-          <h3>Authenticate</h3>
-          <p>Request a token from the API endpoint (/api/auth/login) and sign in with your email and token.</p>
+      <div class="section-title">FMEA at a glance</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Asset hierarchies that match your turbines</h3>
+          <p>Group towers, blades, gearboxes, and electrical subsystems with custom fields. Keep onshore and offshore variants separate but comparable.</p>
         </div>
-        <div class="step">
-          <div class="step-number">02</div>
-          <h3>Build your FMECA</h3>
-          <p>Add subsystems, components, and failure modes. Capture effects, score S/O/D, and watch the RPN update as you type.</p>
+        <div class="card">
+          <h3>Risk-first scoring</h3>
+          <p>Severity, occurrence, and detection scoring drives RPN instantly. Filters keep the riskiest items at the top of the list.</p>
         </div>
-        <div class="step">
-          <div class="step-number">03</div>
-          <h3>Save and share</h3>
-          <p>Save to the backend, reload projects later, and export to CSV or PDF for reviews, OEM submissions, or service crews.</p>
+        <div class="card">
+          <h3>Reports that travel</h3>
+          <p>Generate CSV/PDF exports that drop into OEM submissions, regulators, and service partners without reformatting.</p>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="section-title">Tech behind the app</div>
+      <div class="section-title">How the suite works</div>
       <div class="card stack-card">
         <div>
           <div class="meta-label">Frontend</div>
@@ -105,10 +108,10 @@
 
     <section>
       <div class="card">
-        <div class="section-title" style="margin: 0 0 10px;">Ready to run it?</div>
-        <p class="lede" style="margin: 0 0 14px;">Spin up the Django API on port 5000, start the React app on port 3000, and use the token-based login to get to work. Once you have a deployed URL, swap it into the launch button above.</p>
+        <div class="section-title" style="margin: 0 0 10px;">Ready to explore?</div>
+        <p class="lede" style="margin: 0 0 14px;">Open the FMEA tool to see the full workflow, review features, and jump to the login page. Use the FMEA dedicated page to swap in your deployed URL.</p>
         <div class="cta-row">
-          <a class="cta primary open-app" href="http://localhost:3000" target="_blank" rel="noopener">Open the app</a>
+          <a class="cta primary" href="fmea.html">Go to FMEA page</a>
           <a class="cta ghost" href="fmeca-web-app/README.md" target="_blank" rel="noopener">Setup and deployment</a>
         </div>
       </div>

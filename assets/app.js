@@ -6,9 +6,18 @@
   const DEFAULT = 'http://localhost:3000';
   const appUrl = (paramUrl || saved || DEFAULT).trim();
 
+  function buildUrl(base, path) {
+    if (!path) return base;
+    if (/^https?:\/\//i.test(path)) return path;
+    const trimmedBase = base.replace(/\/+$/, '');
+    const cleanedPath = path.startsWith('/') ? path : `/${path}`;
+    return `${trimmedBase}${cleanedPath}`;
+  }
+
   function setAppLinks(url) {
     document.querySelectorAll('a.open-app').forEach(a => {
-      a.href = url;
+      const extraPath = a.dataset.path || '';
+      a.href = buildUrl(url, extraPath);
       a.target = '_blank';
       a.rel = 'noopener';
     });
@@ -17,8 +26,12 @@
   function enhanceUI() {
     const hint = document.querySelector('.hint');
     if (!hint) return;
+    const firstAppLink = document.querySelector('.open-app');
+    const linkPath = firstAppLink ? firstAppLink.dataset.path || '' : '';
+    const resolvedLink = buildUrl(appUrl, linkPath);
+
     if (appUrl.includes('localhost')) {
-      hint.textContent = hint.textContent + ' (currently pointing at localhost)';
+      hint.textContent = hint.textContent + ` (currently pointing at ${resolvedLink})`;
       // add small control to quickly set a deployed URL
       const btn = document.createElement('button');
       btn.type = 'button';
@@ -30,13 +43,13 @@
         if (!url) return;
         localStorage.setItem('deployed_app_url', url.trim());
         setAppLinks(url.trim());
-        hint.textContent = 'App links now point to: ' + url.trim();
+        hint.textContent = 'App links now point to: ' + buildUrl(url.trim(), linkPath);
       };
       // try to insert into first .cta-row available
       const row = document.querySelector('.cta-row');
       if (row) row.appendChild(btn);
     } else {
-      hint.textContent = 'App links point to: ' + appUrl;
+      hint.textContent = 'App links point to: ' + resolvedLink;
     }
   }
 
