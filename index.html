@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FMECA Tool | Wind Turbine Maintenance</title>
+  <meta name="description" content="Build and manage FMECA projects for wind turbine maintenance. Capture subsystems, components, failure modes, and RPN scoring with export-ready outputs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #050914;
+      --panel: rgba(9, 15, 30, 0.75);
+      --panel-strong: rgba(13, 24, 48, 0.9);
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #e8f0ff;
+      --muted: #c3d0eb;
+      --accent: #2fd3a8;
+      --accent-2: #4f9bff;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 20% 20%, rgba(79, 155, 255, 0.08), transparent 35%),
+                  radial-gradient(circle at 80% 0%, rgba(47, 211, 168, 0.12), transparent 30%),
+                  var(--bg);
+      color: var(--text);
+      font-family: 'Inter', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+      position: relative;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.04);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(79, 155, 255, 0.14), rgba(47, 211, 168, 0.12));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.06), transparent 40%);
+      pointer-events: none;
+    }
+
+    h1 {
+      margin: 14px 0 12px;
+      font-size: clamp(32px, 5vw, 44px);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    }
+
+    .lede {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      margin: 22px 0 10px;
+      flex-wrap: wrap;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      border: 1px solid transparent;
+    }
+
+    .cta.primary {
+      background: linear-gradient(120deg, var(--accent), #58f0c8);
+      color: #03120d;
+      box-shadow: 0 14px 40px rgba(47, 211, 168, 0.35);
+    }
+
+    .cta.ghost {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .cta:hover { transform: translateY(-2px); }
+
+    .hint {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .meta-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .meta-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .meta-value {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    section {
+      margin-top: 40px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--panel-strong);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .step {
+      background: linear-gradient(135deg, rgba(79, 155, 255, 0.12), rgba(47, 211, 168, 0.08));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .step-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(47, 211, 168, 0.16);
+      color: var(--text);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .stack-card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding: 24px; }
+      .cta-row { flex-direction: column; }
+      .cta { width: 100%; text-align: center; }
+    }
+  </style>
+
+  <!-- Add runtime-configurable app URL script -->
+  <script>
+    (function () {
+      // Determine app URL: ?app=... overrides saved setting, otherwise use localStorage, default to localhost
+      const params = new URLSearchParams(location.search);
+      const saved = localStorage.getItem('deployed_app_url');
+      const paramUrl = params.get('app');
+      const DEFAULT = 'http://localhost:3000';
+      const appUrl = (paramUrl || saved || DEFAULT).trim();
+
+      function setAppLinks(url) {
+        document.querySelectorAll('a.open-app').forEach(a => {
+          a.href = url;
+          a.target = '_blank';
+          a.rel = 'noopener';
+        });
+      }
+
+      function enhanceUI() {
+        const hint = document.querySelector('.hint');
+        if (!hint) return;
+        if (appUrl.includes('localhost')) {
+          hint.textContent = hint.textContent + ' (currently pointing at localhost)';
+          // add small control to quickly set a deployed URL
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.textContent = 'Use deployed URL';
+          btn.className = 'cta ghost';
+          btn.style.marginLeft = '12px';
+          btn.onclick = function () {
+            const url = prompt('Paste deployed app URL (https://your-domain.example):');
+            if (!url) return;
+            localStorage.setItem('deployed_app_url', url.trim());
+            setAppLinks(url.trim());
+            hint.textContent = 'App links now point to: ' + url.trim();
+          };
+          // try to insert into first .cta-row available
+          const row = document.querySelector('.cta-row');
+          if (row) row.appendChild(btn);
+        } else {
+          hint.textContent = 'App links point to: ' + appUrl;
+        }
+      }
+
+      // Run after DOM ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => { setAppLinks(appUrl); enhanceUI(); });
+      } else {
+        setAppLinks(appUrl); enhanceUI();
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="pill">FMECA tool for wind assets</div>
+      <h1>Plan wind turbine maintenance with a structured FMECA workflow.</h1>
+      <p class="lede">Capture subsystems, components, and failure modes, score them with severity-occurrence-detection, and export clean reports. Backed by a Django API and a focused React UI built for turbine operations.</p>
+      <div class="cta-row">
+        <!-- mark these so the script can update them at runtime -->
+        <a class="cta primary open-app" href="http://localhost:3000" target="_blank" rel="noopener">Open the app</a>
+        <a class="cta ghost" href="fmeca-web-app/README.md" target="_blank" rel="noopener">View setup guide</a>
+      </div>
+      <p class="hint">Button points at the default frontend (localhost:3000). Swap in your deployed URL when you publish.</p>
+      <div class="meta-grid">
+        <div class="meta-card">
+          <div class="meta-label">Scope</div>
+          <div class="meta-value">Failure Modes, Effects and Criticality Analysis for wind assets</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-label">Stack</div>
+          <div class="meta-value">React + Vite UI with Django REST backend</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-label">Exports</div>
+          <div class="meta-value">Excel-ready CSV and print-friendly PDF</div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-title">What you can do</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Model the hierarchy</h3>
+          <p>Capture subsystems and components, then add failure modes with effects and mitigation notes. Everything stays organized by the assets you maintain.</p>
+        </div>
+        <div class="card">
+          <h3>Score risk fast</h3>
+          <p>Use 1-10 scoring for severity, occurrence, and detection. RPN is calculated instantly so you can focus on the riskiest work.</p>
+        </div>
+        <div class="card">
+          <h3>Save, reload, export</h3>
+          <p>Persist projects to the Django API, reopen them with a click, and export to CSV or PDF for audits and handoffs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">How it works</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3>Authenticate</h3>
+          <p>Request a token from the API endpoint (/api/auth/login) and sign in with your email and token.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3>Build your FMECA</h3>
+          <p>Add subsystems, components, and failure modes. Capture effects, score S/O/D, and watch the RPN update as you type.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3>Save and share</h3>
+          <p>Save to the backend, reload projects later, and export to CSV or PDF for reviews, OEM submissions, or service crews.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Tech behind the app</div>
+      <div class="card stack-card">
+        <div>
+          <div class="meta-label">Frontend</div>
+          <div class="tag">React + Vite</div>
+          <div class="tag">TypeScript</div>
+          <div class="tag">CSV/PDF export</div>
+        </div>
+        <div>
+          <div class="meta-label">Backend</div>
+          <div class="tag">Django REST API</div>
+          <div class="meta-label">Auth</div>
+          <div class="tag">Token auth</div>
+          <div class="tag">SQLite dev (swap to Postgres/MySQL)</div>
+        </div>
+        <div>
+          <div class="meta-label">Deployment</div>
+          <div class="tag">Docker compose ready</div>
+          <div class="tag">Configurable CORS/CSRF</div>
+          <div class="tag">Static frontend build</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <div class="section-title" style="margin: 0 0 10px;">Ready to run it?</div>
+        <p class="lede" style="margin: 0 0 14px;">Spin up the Django API on port 5000, start the React app on port 3000, and use the token-based login to get to work. Once you have a deployed URL, swap it into the launch button above.</p>
+        <div class="cta-row">
+          <a class="cta primary open-app" href="http://localhost:3000" target="_blank" rel="noopener">Open the app</a>
+          <a class="cta ghost" href="fmeca-web-app/README.md" target="_blank" rel="noopener">Setup and deployment</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built for reliability teams keeping wind assets running. MIT licensed.
+    </footer>
+  </div>
+</body>
+</html>
