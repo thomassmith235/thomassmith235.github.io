@@ -202,6 +202,47 @@ section {
   gap: 14px;
 }
 
+.support-section {
+  position: relative;
+}
+
+.support-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.support-nav {
+  position: sticky;
+  top: 24px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.support-nav-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.support-nav a {
+  display: block;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 0;
+}
+
+.support-nav a:hover {
+  color: var(--text);
+}
+
 .step {
   background: linear-gradient(135deg, rgba(79, 155, 255, 0.12), rgba(47, 211, 168, 0.08));
   border: 1px solid var(--border);
@@ -315,5 +356,17 @@ footer {
   }
   .hero-icon {
     width: 160px;
+  }
+  .support-layout {
+    grid-template-columns: 1fr;
+  }
+  .support-nav {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+  .support-nav a {
+    padding: 4px 0;
   }
 }

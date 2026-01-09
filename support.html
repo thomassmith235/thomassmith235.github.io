@@ -32,13 +32,25 @@
       <p class="lede">User manuals, FAQs, and contact details for each app. More apps will be added as they launch.</p>
     </header>
 
-    <section>
-      <div class="section-title">FMECA Web App Support</div>
-      <p class="lede">Welcome! This page covers the user manual, FAQs, and support contact details for the FMECA Web App.</p>
-      <p>If you need help, email us at <strong>support@yourdomain.com</strong>.</p>
+    <section class="support-section">
+      <div class="support-layout">
+        <nav class="support-nav" aria-label="Support sections">
+          <div class="support-nav-title">On this page</div>
+          <a href="#fmeca-overview">Overview</a>
+          <a href="#fmeca-manual">User Manual</a>
+          <a href="#fmeca-limits">MVP Limits</a>
+          <a href="#fmeca-faqs">FAQs</a>
+          <a href="#fmeca-privacy">Privacy</a>
+          <a href="#fmeca-support">Support</a>
+          <a href="#fmeca-status">System Status</a>
+        </nav>
+        <div class="support-content">
+          <div class="section-title" id="fmeca-overview">FMECA Web App Support</div>
+          <p class="lede">Welcome! This page covers the user manual, FAQs, and support contact details for the FMECA Web App.</p>
+          <p>If you need help, email us at <strong>support@yourdomain.com</strong>.</p>
 
-      <div class="card">
-        <h3>User Manual</h3>
+          <div class="card" id="fmeca-manual">
+            <h3>User Manual</h3>
         <h4>1) Create an account and sign in</h4>
         <ul>
           <li>Open the app and choose <strong>Create account</strong>.</li>
@@ -79,41 +91,43 @@
             </ul>
           </li>
         </ul>
-      </div>
+          </div>
 
-      <div class="card">
-        <h3>MVP Limits (Free Tier)</h3>
-        <ul>
-          <li><strong>1 project per user</strong></li>
-          <li><strong>Up to 10 subsystems per project</strong></li>
-          <li><strong>Up to 10 components per subsystem</strong></li>
-          <li><strong>Up to 10 failure modes per component</strong></li>
-        </ul>
-        <p>When a limit is exceeded the app will show a message indicating the free tier limit. Paid tier is <strong>coming soon</strong>.</p>
-      </div>
+          <div class="card" id="fmeca-limits">
+            <h3>MVP Limits (Free Tier)</h3>
+            <ul>
+              <li><strong>1 project per user</strong></li>
+              <li><strong>Up to 10 subsystems per project</strong></li>
+              <li><strong>Up to 10 components per subsystem</strong></li>
+              <li><strong>Up to 10 failure modes per component</strong></li>
+            </ul>
+            <p>When a limit is exceeded the app will show a message indicating the free tier limit. Paid tier is <strong>coming soon</strong>.</p>
+          </div>
 
-      <div class="card">
-        <h3>FAQs</h3>
-        <p><strong>Q: Why can't I save more than one project?</strong><br />A: The MVP free tier is limited to one project per user. Paid tier is coming soon.</p>
-        <p><strong>Q: My Save button fails. What should I check?</strong><br />A: Confirm you're signed in and your API is reachable. If limits are exceeded, the app will show a clear message.</p>
-        <p><strong>Q: I see "Session expired. Please sign in again."</strong><br />A: Your token expired. Sign in again to continue.</p>
-        <p><strong>Q: Why does PDF export open a new tab?</strong><br />A: It uses the browser's print dialog. Allow pop-ups for the site to export PDFs.</p>
-        <p><strong>Q: Where is my data stored?</strong><br />A: Projects are stored in the app database associated with your account. See the Privacy section below.</p>
-      </div>
+          <div class="card" id="fmeca-faqs">
+            <h3>FAQs</h3>
+            <p><strong>Q: Why can't I save more than one project?</strong><br />A: The MVP free tier is limited to one project per user. Paid tier is coming soon.</p>
+            <p><strong>Q: My Save button fails. What should I check?</strong><br />A: Confirm you're signed in and your API is reachable. If limits are exceeded, the app will show a clear message.</p>
+            <p><strong>Q: I see "Session expired. Please sign in again."</strong><br />A: Your token expired. Sign in again to continue.</p>
+            <p><strong>Q: Why does PDF export open a new tab?</strong><br />A: It uses the browser's print dialog. Allow pop-ups for the site to export PDFs.</p>
+            <p><strong>Q: Where is my data stored?</strong><br />A: Projects are stored in the app database associated with your account. See the Privacy section below.</p>
+          </div>
 
-      <div class="card">
-        <h3>Privacy</h3>
-        <p>We store your email address and project data to provide the service. We do not sell personal data.</p>
-      </div>
+          <div class="card" id="fmeca-privacy">
+            <h3>Privacy</h3>
+            <p>We store your email address and project data to provide the service. We do not sell personal data.</p>
+          </div>
 
-      <div class="card">
-        <h3>Support</h3>
-        <p>Email: <strong>support@yourdomain.com</strong><br />Typical response time: <strong>1-2 business days</strong></p>
-      </div>
+          <div class="card" id="fmeca-support">
+            <h3>Support</h3>
+            <p>Email: <strong>support@yourdomain.com</strong><br />Typical response time: <strong>1-2 business days</strong></p>
+          </div>
 
-      <div class="card">
-        <h3>System Status</h3>
-        <p>API status: <code>https://your-api-domain/health</code></p>
+          <div class="card" id="fmeca-status">
+            <h3>System Status</h3>
+            <p>API status: <code>https://your-api-domain/health</code></p>
+          </div>
+        </div>
       </div>
     </section>
 
