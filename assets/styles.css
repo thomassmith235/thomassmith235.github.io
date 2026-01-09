@@ -204,7 +204,7 @@ section {
 
 .support-section {
   position: relative;
-  padding: 0 24px;
+  padding: 0;
 }
 
 .support-layout {
@@ -217,7 +217,7 @@ section {
 
 .support-nav {
   position: sticky;
-  top: 24px;
+  top: 48px;
   background: linear-gradient(160deg, rgba(79, 155, 255, 0.12), rgba(47, 211, 168, 0.1));
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -259,7 +259,7 @@ section {
   padding-right: 0;
 }
 
-.support-wrap {
+.support-main-inner {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
