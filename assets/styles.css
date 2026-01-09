@@ -217,7 +217,7 @@ section {
 
 .support-nav {
   position: sticky;
-  top: 110px;
+  top: 24px;
   background: linear-gradient(160deg, rgba(79, 155, 255, 0.12), rgba(47, 211, 168, 0.1));
   border: 1px solid var(--border);
   border-radius: 18px;
