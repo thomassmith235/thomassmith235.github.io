@@ -208,18 +208,21 @@ section {
 
 .support-layout {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+  gap: 28px;
   align-items: start;
 }
 
 .support-nav {
   position: sticky;
-  top: 24px;
-  background: var(--panel);
+  top: 110px;
+  background: linear-gradient(160deg, rgba(79, 155, 255, 0.12), rgba(47, 211, 168, 0.1));
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 6px;
 }
 
 .support-nav-title {
@@ -227,7 +230,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--muted);
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-weight: 600;
 }
 
@@ -236,11 +239,16 @@ section {
   color: var(--muted);
   text-decoration: none;
   font-weight: 600;
-  padding: 6px 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 
 .support-nav a:hover {
   color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--border);
 }
 
 .step {
@@ -365,8 +373,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 8px 16px;
+    box-shadow: none;
+    background: var(--panel);
   }
   .support-nav a {
-    padding: 4px 0;
+    padding: 6px 10px;
   }
 }
