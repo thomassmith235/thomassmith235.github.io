@@ -204,6 +204,7 @@ section {
 
 .support-section {
   position: relative;
+  padding: 0 24px;
 }
 
 .support-layout {
@@ -211,6 +212,7 @@ section {
   grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
   gap: 28px;
   align-items: start;
+  width: 100%;
 }
 
 .support-nav {
@@ -249,6 +251,22 @@ section {
   color: var(--text);
   background: rgba(255, 255, 255, 0.06);
   border-color: var(--border);
+}
+
+.support-page .page {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.support-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.support-content {
+  max-width: 900px;
 }
 
 .step {
