@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web App Support</title>
+  <meta name="description" content="User manuals, FAQs, and support contact details for the web apps." />
+  <meta name="theme-color" content="#050914" />
+  <link rel="canonical" href="https://thomassmith235.github.io/support.html" />
+  <link rel="icon" href="assets/images/wind-turbine.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Web App Support" />
+  <meta property="og:description" content="User manuals, FAQs, and support contact details for the web apps." />
+  <meta property="og:url" content="https://thomassmith235.github.io/support.html" />
+  <meta property="og:image" content="https://thomassmith235.github.io/assets/images/wind-turbine.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Web App Support" />
+  <meta name="twitter:description" content="User manuals, FAQs, and support contact details for the web apps." />
+  <meta name="twitter:image" content="https://thomassmith235.github.io/assets/images/wind-turbine.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="index.html">&larr; Back to homepage</a>
+    <header class="hero">
+      <div class="pill">Support Center</div>
+      <h1>Web App Support</h1>
+      <p class="lede">User manuals, FAQs, and contact details for each app. More apps will be added as they launch.</p>
+    </header>
+
+    <section>
+      <div class="section-title">FMECA Web App Support</div>
+      <p class="lede">Welcome! This page covers the user manual, FAQs, and support contact details for the FMECA Web App.</p>
+      <p>If you need help, email us at <strong>support@yourdomain.com</strong>.</p>
+
+      <div class="card">
+        <h3>User Manual</h3>
+        <h4>1) Create an account and sign in</h4>
+        <ul>
+          <li>Open the app and choose <strong>Create account</strong>.</li>
+          <li>Confirm your email using the link from Supabase.</li>
+          <li>Sign in to access your projects.</li>
+        </ul>
+        <h4>2) Create a new project</h4>
+        <ul>
+          <li>Click <strong>+ New project</strong> in the left sidebar.</li>
+          <li>Enter a <strong>Project title</strong> and <strong>Description</strong>.</li>
+        </ul>
+        <h4>3) Build your FMECA</h4>
+        <ul>
+          <li>Add <strong>Subsystems</strong>.</li>
+          <li>Inside each subsystem, add <strong>Components</strong>.</li>
+          <li>Inside each component, add <strong>Failure Modes</strong> with:
+            <ul>
+              <li>Title</li>
+              <li>Effect</li>
+              <li>Severity (1-10)</li>
+              <li>Occurrence (1-10)</li>
+              <li>Detection (1-10)</li>
+            </ul>
+          </li>
+        </ul>
+        <p>RPN is calculated automatically: <strong>Severity x Occurrence x Detection</strong>.</p>
+        <h4>4) Save your project</h4>
+        <ul>
+          <li>Click <strong>Save project</strong> in the header.</li>
+          <li>The status line shows the last saved time.</li>
+        </ul>
+        <h4>5) Export</h4>
+        <ul>
+          <li>Click <strong>Export</strong> and choose:
+            <ul>
+              <li><strong>Export to Excel (CSV)</strong></li>
+              <li><strong>Export to PDF</strong> (opens print dialog in a new tab)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>MVP Limits (Free Tier)</h3>
+        <ul>
+          <li><strong>1 project per user</strong></li>
+          <li><strong>Up to 10 subsystems per project</strong></li>
+          <li><strong>Up to 10 components per subsystem</strong></li>
+          <li><strong>Up to 10 failure modes per component</strong></li>
+        </ul>
+        <p>When a limit is exceeded the app will show a message indicating the free tier limit. Paid tier is <strong>coming soon</strong>.</p>
+      </div>
+
+      <div class="card">
+        <h3>FAQs</h3>
+        <p><strong>Q: Why can't I save more than one project?</strong><br />A: The MVP free tier is limited to one project per user. Paid tier is coming soon.</p>
+        <p><strong>Q: My Save button fails. What should I check?</strong><br />A: Confirm you're signed in and your API is reachable. If limits are exceeded, the app will show a clear message.</p>
+        <p><strong>Q: I see "Session expired. Please sign in again."</strong><br />A: Your token expired. Sign in again to continue.</p>
+        <p><strong>Q: Why does PDF export open a new tab?</strong><br />A: It uses the browser's print dialog. Allow pop-ups for the site to export PDFs.</p>
+        <p><strong>Q: Where is my data stored?</strong><br />A: Projects are stored in the app database associated with your account. See the Privacy section below.</p>
+      </div>
+
+      <div class="card">
+        <h3>Privacy</h3>
+        <p>We store your email address and project data to provide the service. We do not sell personal data.</p>
+      </div>
+
+      <div class="card">
+        <h3>Support</h3>
+        <p>Email: <strong>support@yourdomain.com</strong><br />Typical response time: <strong>1-2 business days</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>System Status</h3>
+        <p>API status: <code>https://your-api-domain/health</code></p>
+      </div>
+    </section>
+
+    <footer>
+      Built for reliability teams keeping renewables assets running. MIT licensed.
+    </footer>
+  </div>
+</body>
+</html>
