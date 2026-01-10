@@ -1,7 +1,24 @@
 (function () {
   // Determine app URL: ?app=... overrides saved setting, otherwise use localStorage, default to localhost
+  function safeStorageGet(key) {
+    try {
+      return localStorage.getItem(key);
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function safeStorageSet(key, value) {
+    try {
+      localStorage.setItem(key, value);
+      return true;
+    } catch (err) {
+      return false;
+    }
+  }
+
   const params = new URLSearchParams(location.search);
-  const saved = localStorage.getItem('deployed_app_url');
+  const saved = safeStorageGet('deployed_app_url');
   const paramUrl = params.get('app');
   const DEFAULT = 'http://localhost:3000';
   const appUrl = (paramUrl || saved || DEFAULT).trim();
@@ -41,7 +58,7 @@
       btn.onclick = function () {
         const url = prompt('Paste deployed app URL (https://your-domain.example):');
         if (!url) return;
-        localStorage.setItem('deployed_app_url', url.trim());
+        safeStorageSet('deployed_app_url', url.trim());
         setAppLinks(url.trim());
         hint.textContent = 'App links now point to: ' + buildUrl(url.trim(), linkPath);
       };
