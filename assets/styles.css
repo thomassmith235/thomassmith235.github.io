@@ -195,7 +195,35 @@ section {
   box-shadow: var(--shadow);
   margin: 14px 0 12px;
   display: block;
+  cursor: zoom-in;
 }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 9, 20, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 1000;
+}
+
+.lightbox.open { display: flex; }
+
+.lightbox-frame {
+  width: min(1200px, 100%);
+}
+
+.lightbox-image {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: #0b1222;
+}
+
+.no-scroll { overflow: hidden; }
 
 .card-actions {
   margin-top: 12px;
