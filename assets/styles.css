@@ -188,6 +188,14 @@ section {
 
 .card h3 { margin: 0 0 8px; font-size: 18px; }
 .card p { margin: 0; color: var(--muted); }
+.tool-screenshot {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  margin: 14px 0 12px;
+  display: block;
+}
 
 .card-actions {
   margin-top: 12px;
