@@ -29,21 +29,6 @@ body {
   position: relative;
 }
 
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-  font-size: 12px;
-  color: var(--muted);
-}
-
 .hero {
   background: linear-gradient(135deg, rgba(79, 155, 255, 0.14), rgba(47, 211, 168, 0.12));
   border: 1px solid var(--border);
