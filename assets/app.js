@@ -20,7 +20,7 @@
   const params = new URLSearchParams(location.search);
   const saved = safeStorageGet('deployed_app_url');
   const paramUrl = params.get('app');
-  const DEFAULT = 'http://localhost:3000';
+  const DEFAULT = 'https://fmea.nevis.tools';
   const appUrl = (paramUrl || saved || DEFAULT).trim();
 
   function buildUrl(base, path) {
