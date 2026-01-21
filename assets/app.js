@@ -1,27 +1,5 @@
 (function () {
-  // Determine app URL: ?app=... overrides saved setting, otherwise use localStorage, default to localhost
-  function safeStorageGet(key) {
-    try {
-      return localStorage.getItem(key);
-    } catch (err) {
-      return null;
-    }
-  }
-
-  function safeStorageSet(key, value) {
-    try {
-      localStorage.setItem(key, value);
-      return true;
-    } catch (err) {
-      return false;
-    }
-  }
-
-  const params = new URLSearchParams(location.search);
-  const saved = safeStorageGet('deployed_app_url');
-  const paramUrl = params.get('app');
-  const DEFAULT = 'https://fmea.nevis.tools';
-  const appUrl = (paramUrl || saved || DEFAULT).trim();
+  const appUrl = 'https://fmea.nevis.tools';
 
   function buildUrl(base, path) {
     if (!path) return base;
@@ -47,27 +25,7 @@
     const linkPath = firstAppLink ? firstAppLink.dataset.path || '' : '';
     const resolvedLink = buildUrl(appUrl, linkPath);
 
-    if (appUrl.includes('localhost')) {
-      hint.textContent = hint.textContent + ` (currently pointing at ${resolvedLink})`;
-      // add small control to quickly set a deployed URL
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.textContent = 'Use deployed URL';
-      btn.className = 'cta ghost';
-      btn.style.marginLeft = '12px';
-      btn.onclick = function () {
-        const url = prompt('Paste deployed app URL (https://your-domain.example):');
-        if (!url) return;
-        safeStorageSet('deployed_app_url', url.trim());
-        setAppLinks(url.trim());
-        hint.textContent = 'App links now point to: ' + buildUrl(url.trim(), linkPath);
-      };
-      // try to insert into first .cta-row available
-      const row = document.querySelector('.cta-row');
-      if (row) row.appendChild(btn);
-    } else {
-      hint.textContent = 'App links point to: ' + resolvedLink;
-    }
+    hint.textContent = 'App links point to: ' + resolvedLink;
   }
 
   function setupImageLightbox() {
