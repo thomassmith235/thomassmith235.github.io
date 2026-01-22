@@ -52,7 +52,7 @@ body {
 }
 
 .hero-icon {
-  width: 200px;
+  width: 280px;
   max-width: 100%;
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.35));
 }
@@ -463,7 +463,7 @@ footer {
     justify-content: flex-start;
   }
   .hero-icon {
-    width: 160px;
+    width: 220px;
   }
   .support-layout {
     grid-template-columns: 1fr;
