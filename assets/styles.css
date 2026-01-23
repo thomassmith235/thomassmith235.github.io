@@ -253,6 +253,88 @@ section {
 
 .no-scroll { overflow: hidden; }
 
+.cookie-banner {
+  position: fixed;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1200;
+  background: rgba(19, 34, 56, 0.98);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  backdrop-filter: blur(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cookie-banner.hide {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+.cookie-banner-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.cookie-copy h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+}
+
+.cookie-copy p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.cookie-button {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.cookie-button.primary {
+  background: linear-gradient(120deg, var(--accent), #58f0c8);
+  color: #03120d;
+  box-shadow: 0 10px 30px rgba(47, 211, 168, 0.3);
+}
+
+.cookie-button.ghost {
+  border-color: var(--border);
+}
+
+.cookie-button:hover { transform: translateY(-1px); }
+
+.cookie-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cookie-link:hover {
+  color: var(--text);
+}
+
 .card-actions {
   margin-top: 12px;
   display: flex;
@@ -453,6 +535,18 @@ footer {
   .hero { padding: 24px; }
   .cta-row { flex-direction: column; }
   .cta { width: 100%; text-align: center; }
+  .cookie-banner {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    padding: 16px;
+  }
+  .cookie-banner-inner {
+    grid-template-columns: 1fr;
+  }
+  .cookie-actions {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 900px) {
