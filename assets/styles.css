@@ -200,6 +200,12 @@ section {
   color: var(--muted);
 }
 
+.tier-note {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .tier-list {
   margin: 0;
   padding-left: 18px;
