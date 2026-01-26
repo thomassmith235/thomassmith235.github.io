@@ -29,7 +29,7 @@
     const linkPath = firstAppLink ? firstAppLink.dataset.path || '' : '';
     const resolvedLink = buildUrl(appUrl, linkPath);
 
-    hint.textContent = 'App links point to: ' + resolvedLink;
+    hint.textContent = 'No credit card required.';
   }
 
   function setupImageLightbox() {
