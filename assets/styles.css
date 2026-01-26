@@ -173,6 +173,47 @@ h1 {
   gap: 16px;
 }
 
+.post-hero {
+  margin-top: 8px;
+}
+
+.post-meta {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.post-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.post-content h2 {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.post-content p {
+  color: var(--muted);
+}
+
+.post-list {
+  color: var(--muted);
+  padding-left: 18px;
+}
+
+.post-list li {
+  margin-bottom: 10px;
+}
+
+.post-card h3 {
+  margin: 6px 0 8px;
+}
+
 section {
   margin-top: 40px;
 }
