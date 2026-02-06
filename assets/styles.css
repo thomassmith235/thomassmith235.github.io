@@ -81,10 +81,14 @@ body {
   z-index: 1;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero-screenshot {
   width: min(980px, 100%);
+  height: clamp(280px, 52vw, 520px);
+  object-fit: cover;
+  object-position: top;
   border-radius: 18px;
   border: 1px solid var(--border);
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
