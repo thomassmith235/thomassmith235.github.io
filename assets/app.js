@@ -1,5 +1,5 @@
 (function () {
-  const appUrl = 'https://fmea.nevis.tools';
+  const appUrl = 'https://fmea.nevis.tools/demo';
   const analyticsId = 'G-NXQXLDE2XE';
   const consentKey = 'nevis_cookie_consent';
   const consentAccepted = 'accepted';
@@ -20,16 +20,6 @@
       a.target = '_blank';
       a.rel = 'noopener';
     });
-  }
-
-  function enhanceUI() {
-    const hint = document.querySelector('.hint');
-    if (!hint) return;
-    const firstAppLink = document.querySelector('.open-app');
-    const linkPath = firstAppLink ? firstAppLink.dataset.path || '' : '';
-    const resolvedLink = buildUrl(appUrl, linkPath);
-
-    hint.textContent = 'No credit card required.';
   }
 
   function setupImageLightbox() {
@@ -155,13 +145,11 @@
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
       setAppLinks(appUrl);
-      enhanceUI();
       setupImageLightbox();
       initCookieConsent();
     });
   } else {
     setAppLinks(appUrl);
-    enhanceUI();
     setupImageLightbox();
     initCookieConsent();
   }
