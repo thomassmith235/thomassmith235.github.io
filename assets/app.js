@@ -1,5 +1,5 @@
 (function () {
-  const appUrl = 'https://fmea.nevis.tools/demo';
+  const appUrl = 'https://fmea.nevis.tools';
   const analyticsId = 'G-NXQXLDE2XE';
   const consentKey = 'nevis_cookie_consent';
   const consentAccepted = 'accepted';
@@ -15,6 +15,7 @@
 
   function setAppLinks(url) {
     document.querySelectorAll('a.open-app').forEach(a => {
+      if (a.dataset.fixed === 'true') return;
       const extraPath = a.dataset.path || '';
       a.href = buildUrl(url, extraPath);
       a.target = '_blank';
