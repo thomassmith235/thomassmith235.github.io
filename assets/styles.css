@@ -122,6 +122,10 @@ h1 {
   justify-content: center;
 }
 
+.cta-row.align-left {
+  justify-content: flex-start;
+}
+
 .cta {
   display: inline-flex;
   align-items: center;
@@ -611,6 +615,7 @@ footer {
   .hero { padding: 24px 20px 20px; }
   .cta-row { flex-direction: column; }
   .cta { width: 100%; text-align: center; }
+  .cta-row.align-left .cta { width: auto; }
   .cookie-banner {
     left: 16px;
     right: 16px;
