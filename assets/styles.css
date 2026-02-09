@@ -31,10 +31,14 @@ body {
   display: inline-flex;
   align-items: center;
   margin-bottom: 10px;
+  position: fixed;
+  top: 12px;
+  left: 14px;
+  z-index: 40;
 }
 
 .page-logo img {
-  height: 28px;
+  height: 20px;
   width: auto;
   display: block;
 }
@@ -705,7 +709,11 @@ footer {
 
 @media (max-width: 640px) {
   .page-logo img {
-    height: 24px;
+    height: 18px;
+  }
+  .page-logo {
+    top: 10px;
+    left: 10px;
   }
   .site-header {
     align-items: flex-start;
