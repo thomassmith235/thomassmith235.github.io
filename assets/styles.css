@@ -32,7 +32,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 10px 14px;
+  padding: 10px 14px 10px 26px;
   margin-bottom: 20px;
   border-radius: 14px;
   border: 1px solid var(--border);
@@ -42,10 +42,13 @@ body {
 .site-logo {
   display: inline-flex;
   align-items: center;
+  margin-left: -34px;
+  position: relative;
+  z-index: 2;
 }
 
 .site-logo img {
-  height: 40px;
+  height: 56px;
   width: auto;
   display: block;
 }
@@ -707,6 +710,10 @@ footer {
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
+    padding-left: 14px;
+  }
+  .site-logo {
+    margin-left: -18px;
   }
   .site-nav {
     width: 100%;
@@ -717,7 +724,7 @@ footer {
     padding: 8px 10px;
   }
   .site-logo img {
-    height: 34px;
+    height: 44px;
   }
   .site-dropdown-menu {
     position: static;
