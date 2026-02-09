@@ -19,9 +19,27 @@
   <meta name="twitter:image" content="https://nevis.tools/assets/images/nevis_logo_dark.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="/assets/images/fmea_homepage.png?v=2" fetchpriority="high" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/styles.css?v=8" />
   <script src="/assets/app.js?v=5" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Nevis Tools",
+      "url": "https://nevis.tools/",
+      "logo": "https://nevis.tools/assets/images/nevis_logo_dark.png"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Nevis Tools",
+      "url": "https://nevis.tools/"
+    }
+  </script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -98,7 +116,7 @@
         </div>
       </div>
       <div class="hero-media">
-        <img class="hero-screenshot" src="assets/images/fmea_homepage.png?v=2" alt="FMEA Builder interface showing an FMEA table" loading="lazy" />
+        <img class="hero-screenshot" src="/assets/images/fmea_homepage.png?v=2" alt="FMEA Builder interface showing an FMEA table" width="3130" height="1125" loading="eager" fetchpriority="high" decoding="async" />
       </div>
     </header>
 
