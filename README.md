@@ -18,3 +18,12 @@ Static single-page site describing the wind-turbine FMECA app (React frontend + 
 
 ## Preview locally
 Open index.html in your browser - no build step required.
+
+## Quality checks
+- Install deps: `npm install`
+- Run all checks: `npm run check:quality`
+- Run image compression guardrail: `npm run perf:images`
+- Run structured data validation: `npm run seo:structured-data`
+- Run Lighthouse assertions: `npm run lighthouse`
+
+The repository also includes a GitHub Actions workflow at `.github/workflows/quality-checks.yml` that runs these checks on pushes to `main` and pull requests.

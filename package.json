@@ -1,0 +1,17 @@
+{
+  "name": "nevis-tools-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Quality checks for the Nevis Tools static site",
+  "scripts": {
+    "perf:images": "node scripts/check-images.mjs",
+    "seo:structured-data": "node scripts/validate-structured-data.mjs",
+    "lighthouse": "node scripts/run-lighthouse.mjs",
+    "check:quality": "npm run perf:images && npm run seo:structured-data && npm run lighthouse"
+  },
+  "devDependencies": {
+    "chrome-launcher": "^1.2.1",
+    "glob": "^11.0.1",
+    "lighthouse": "^12.6.1"
+  }
+}
