@@ -38,7 +38,7 @@ body {
 }
 
 .page-logo img {
-  height: 20px;
+  height: 60px;
   width: auto;
   display: block;
 }
@@ -709,7 +709,7 @@ footer {
 
 @media (max-width: 640px) {
   .page-logo img {
-    height: 18px;
+    height: 54px;
   }
   .page-logo {
     top: 10px;
